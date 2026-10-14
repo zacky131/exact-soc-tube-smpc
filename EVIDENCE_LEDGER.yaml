@@ -7,6 +7,7 @@
 # Audit 2026-10-06: E016-E017 (revision-v4 runs) appended after the freeze; E000-E015 unchanged.
 # Audit 2026-10-06: E018 (revision-v5 run) appended after the freeze; E000-E017 unchanged.
 # Audit 2026-10-06: E019-E020 (revision-v6 runs) appended after the freeze; E000-E018 unchanged.
+# Audit 2026-10-14: E021-E023 (revision-v7) appended after the freeze; E000-E020 unchanged.
 project:
   name: CX-SMPC multiplicative-noise SMPC
   domain: control
@@ -3545,4 +3546,524 @@ evidence:
       environment: numerical simulation (L1)
       trials: 2000
       label: REVISION-v6, added after the freeze
+    verified: false
+  E021:
+    type: simulation_result
+    evidence_level: L1
+    source:
+      file: results/EXP021_lmi_t0_grid/summary.json
+      commit: null
+    experiment:
+      id: EXP021
+    protocol:
+      simulator: feasibility grid 17x17, benchmark D, N=10, reset initialisation
+      controller: LMI formulation with exact t=0 constraint (FSProblem t0_exact)
+      scenario: sensitivity comparator for reviewer R1-W1
+    metrics:
+      grid_points: 289
+      soc_verified: 165
+      eps:
+        '0.1':
+          t0_exact:
+            verified: 144
+            infeasible: 135
+            unresolved: 10
+          literal:
+            verified: 144
+            infeasible: 137
+            unresolved: 8
+          t0_feasible_where_soc_certified_infeasible: 0
+          soc_only_vs_t0: 21
+        '0.3':
+          t0_exact:
+            verified: 149
+            infeasible: 126
+            unresolved: 14
+          literal:
+            verified: 145
+            infeasible: 137
+            unresolved: 7
+          t0_feasible_where_soc_certified_infeasible: 0
+          soc_only_vs_t0: 16
+        '0.5':
+          t0_exact:
+            verified: 150
+            infeasible: 127
+            unresolved: 12
+          literal:
+            verified: 149
+            infeasible: 132
+            unresolved: 8
+          t0_feasible_where_soc_certified_infeasible: 0
+          soc_only_vs_t0: 15
+        '0.7':
+          t0_exact:
+            verified: 154
+            infeasible: 129
+            unresolved: 6
+          literal:
+            verified: 150
+            infeasible: 135
+            unresolved: 4
+          t0_feasible_where_soc_certified_infeasible: 0
+          soc_only_vs_t0: 11
+        '0.9':
+          t0_exact:
+            verified: 155
+            infeasible: 127
+            unresolved: 7
+          literal:
+            verified: 151
+            infeasible: 132
+            unresolved: 6
+          t0_feasible_where_soc_certified_infeasible: 0
+          soc_only_vs_t0: 10
+    scope:
+      environment: optimisation only (L0/L1)
+      trials: 289
+      label: REVISION-v7, added after the freeze
+    verified: false
+  E022:
+    type: simulation_result
+    evidence_level: L1
+    source:
+      file: results/EXP022_table1_final_v7/summary.json
+      commit: null
+    experiment:
+      id: EXP022
+    protocol:
+      simulator: closed-loop MC, benchmark D, Table 1 seeds, exp016_table1_final.py --n30 full --lmi-t0
+      controller: all Table 1 rows plus LMI exact-t0 rows (eps 0.5 and 0.9)
+      scenario: 4 initial states, T=40
+    metrics:
+      rows:
+        FS-DF-eps0.9|x0=[-0.1, 1.3]: not_initialised (certified_infeasible)
+        FS-DF-eps0.9|x0=[-0.1, 1.2]: not_initialised (certified_infeasible)
+        FS-DF-eps0.9|x0=[0.0, 1.5]: not_initialised (certified_infeasible)
+        FS-DF-eps0.9|x0=[-0.1, 1.4]: not_initialised (certified_infeasible)
+        FS-DF-T0-eps0.9|x0=[-0.1, 1.4]: not_initialised (certified_infeasible)
+        FS-DF|x0=[-0.1, 1.4]: not_initialised (unresolved)
+        FS-DF-T0|x0=[-0.1, 1.4]: not_initialised (unresolved)
+        FS-DF-T0-eps0.9|x0=[-0.1, 1.2]: not_initialised (unresolved)
+        FS-DF-T0-eps0.9|x0=[0.0, 1.5]: not_initialised (unresolved)
+        FS-DF-T0-eps0.9|x0=[-0.1, 1.3]: not_initialised (unresolved)
+        CX-DF-terminal-N30|x0=[-0.1, 1.2]:
+          max_k_violation: 0.0015
+          max_k_cp95_upper: 0.004377320104529616
+          cost_mean: 116.74999415069614
+          cost_std: 23.974166429103242
+          logs:
+            init_reset: 79988
+            init_predict: 12
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        CX-A-terminal-N30|x0=[-0.1, 1.4]:
+          max_k_violation: 0.0175
+          max_k_cp95_upper: 0.02425488947719145
+          cost_mean: 1051.4650937424678
+          cost_std: 2.0482420913602737
+          logs:
+            init_reset: 2000
+            init_predict: 78000
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        CX-A-terminal-N30|x0=[-0.1, 1.3]:
+          max_k_violation: 0.009
+          max_k_cp95_upper: 0.014186714471514504
+          cost_mean: 404.8747851495975
+          cost_std: 3.0291724254610486
+          logs:
+            init_reset: 2000
+            init_predict: 78000
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        CX-DF-terminal-N30|x0=[-0.1, 1.3]:
+          max_k_violation: 0.003
+          max_k_cp95_upper: 0.00651821860997453
+          cost_mean: 319.30155417540715
+          cost_std: 46.7632689194946
+          logs:
+            init_reset: 79975
+            init_predict: 25
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        CX-A-terminal-N30|x0=[0.0, 1.5]:
+          max_k_violation: 0.0235
+          max_k_cp95_upper: 0.03112855081898538
+          cost_mean: 2231.6352576585655
+          cost_std: 2.1023065953248605
+          logs:
+            init_reset: 2000
+            init_predict: 78000
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        M24-IF|x0=[-0.1, 1.2]:
+          max_k_violation: 0.0085
+          max_k_cp95_upper: 0.013574546199731806
+          cost_mean: 178.80952993012156
+          cost_std: 4.180519631539204
+          logs:
+            infeasible: 0
+            unresolved: 0
+        M24-IF|x0=[-0.1, 1.3]:
+          max_k_violation: 0.0105
+          max_k_cp95_upper: 0.01600579487869697
+          cost_mean: 444.491730074321
+          cost_std: 2.67087665877432
+          logs:
+            infeasible: 0
+            unresolved: 0
+        M24-IF|x0=[-0.1, 1.4]:
+          max_k_violation: 0.0175
+          max_k_cp95_upper: 0.02425488947719145
+          cost_mean: 1051.9322771448794
+          cost_std: 2.0501670443117095
+          logs:
+            infeasible: 0
+            unresolved: 0
+        CX-A|x0=[-0.1, 1.3]:
+          max_k_violation: 0.0105
+          max_k_cp95_upper: 0.01600579487869697
+          cost_mean: 444.49173017058695
+          cost_std: 2.670876880761944
+          logs:
+            init_reset: 2000
+            init_predict: 78000
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        CX-A|x0=[-0.1, 1.2]:
+          max_k_violation: 0.0085
+          max_k_cp95_upper: 0.013574546199731806
+          cost_mean: 178.8095276198936
+          cost_std: 4.180526042079493
+          logs:
+            init_reset: 2000
+            init_predict: 78000
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        M24-IF|x0=[0.0, 1.5]:
+          max_k_violation: 0.0235
+          max_k_cp95_upper: 0.03112855081898538
+          cost_mean: 2231.6403112120506
+          cost_std: 2.1025380278235883
+          logs:
+            infeasible: 0
+            unresolved: 0
+        CX-A|x0=[0.0, 1.5]:
+          max_k_violation: 0.0235
+          max_k_cp95_upper: 0.03112855081898538
+          cost_mean: 2231.6403109759576
+          cost_std: 2.1025384530084885
+          logs:
+            init_reset: 2000
+            init_predict: 78000
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        CX-A|x0=[-0.1, 1.4]:
+          max_k_violation: 0.0175
+          max_k_cp95_upper: 0.02425488947719145
+          cost_mean: 1051.9322770127749
+          cost_std: 2.050167493894783
+          logs:
+            init_reset: 2000
+            init_predict: 78000
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        CX-DF|x0=[-0.1, 1.2]:
+          max_k_violation: 0.001
+          max_k_cp95_upper: 0.0036076285698285315
+          cost_mean: 132.66095079228646
+          cost_std: 43.59102942213207
+          logs:
+            init_reset: 79991
+            init_predict: 9
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        CX-DF-terminal-N30|x0=[0.0, 1.5]:
+          max_k_violation: 0.0035
+          max_k_cp95_upper: 0.007197961714658002
+          cost_mean: 2192.54492619102
+          cost_std: 59.36824853354916
+          logs:
+            init_reset: 79911
+            init_predict: 89
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        CX-DF-terminal-N30|x0=[-0.1, 1.4]:
+          max_k_violation: 0.002
+          max_k_cp95_upper: 0.005112808605346209
+          cost_mean: 1017.4895939713216
+          cost_std: 49.45034019529997
+          logs:
+            init_reset: 79918
+            init_predict: 82
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        NOM|x0=[-0.1, 1.2]:
+          max_k_violation: 0.3925
+          max_k_cp95_upper: 0.41429548570582597
+          cost_mean: 88.5938251169299
+          cost_std: 56.5640000314564
+          logs:
+            infeasible: 0
+        NOM|x0=[-0.1, 1.3]:
+          max_k_violation: 0.46
+          max_k_cp95_upper: 0.4821380170700587
+          cost_mean: 155.48409250599533
+          cost_std: 355.0369301020467
+          logs:
+            infeasible: 0
+        CX-DF|x0=[-0.1, 1.3]:
+          max_k_violation: 0.002
+          max_k_cp95_upper: 0.005112808605346209
+          cost_mean: 370.3043789323829
+          cost_std: 52.97724398200228
+          logs:
+            init_reset: 79960
+            init_predict: 40
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        CX-DF|x0=[-0.1, 1.4]:
+          max_k_violation: 0.002
+          max_k_cp95_upper: 0.005112808605346209
+          cost_mean: 1020.3387493573206
+          cost_std: 48.736214446465674
+          logs:
+            init_reset: 79923
+            init_predict: 77
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        CX-DF|x0=[0.0, 1.5]:
+          max_k_violation: 0.0035
+          max_k_cp95_upper: 0.007197961714658002
+          cost_mean: 2192.8738285290415
+          cost_std: 59.20312089801757
+          logs:
+            init_reset: 79911
+            init_predict: 89
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        CX-A-terminal-N10|x0=[-0.1, 1.4]: infeasible_at_x0 ()
+        CX-A-terminal-N10|x0=[0.0, 1.5]: infeasible_at_x0 ()
+        NOM|x0=[-0.1, 1.4]:
+          max_k_violation: 0.4885
+          max_k_cp95_upper: 0.5106605368301083
+          cost_mean: 782.5653269748103
+          cost_std: 7747.091626656928
+          logs:
+            infeasible: 0
+        NOM|x0=[0.0, 1.5]:
+          max_k_violation: 0.4785
+          max_k_cp95_upper: 0.5006607628045723
+          cost_mean: 2886.543987774897
+          cost_std: 18811.710005326397
+          logs:
+            infeasible: 0
+        CX-DF-terminal-N10|x0=[-0.1, 1.4]: infeasible_at_x0 ()
+        CX-DF-terminal-N10|x0=[0.0, 1.5]: infeasible_at_x0 ()
+        CX-A-terminal-N10|x0=[-0.1, 1.3]:
+          max_k_violation: 0.0005
+          max_k_cp95_upper: 0.0027826398346589465
+          cost_mean: 4585.788439565488
+          cost_std: 3.701874343653424
+          logs:
+            init_reset: 2000
+            init_predict: 78000
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        CX-A-terminal-N10|x0=[-0.1, 1.2]:
+          max_k_violation: 0.001
+          max_k_cp95_upper: 0.0036076285698285315
+          cost_mean: 2508.509231370694
+          cost_std: 5.0659936489349136
+          logs:
+            init_reset: 2000
+            init_predict: 78000
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        CX-DF-terminal-N10|x0=[-0.1, 1.2]:
+          max_k_violation: 0.0015
+          max_k_cp95_upper: 0.004377320104529616
+          cost_mean: 2409.8410146554324
+          cost_std: 189.54257856400307
+          logs:
+            init_reset: 79997
+            init_predict: 3
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        CX-DF-terminal-N10|x0=[-0.1, 1.3]:
+          max_k_violation: 0.0015
+          max_k_cp95_upper: 0.004377320104529616
+          cost_mean: 4464.176518237337
+          cost_std: 90.47124589337501
+          logs:
+            init_reset: 79994
+            init_predict: 6
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        CX-A-terminal-N30|x0=[-0.1, 1.2]:
+          max_k_violation: 0.005
+          max_k_cp95_upper: 0.009175895070019778
+          cost_mean: 153.51738477115478
+          cost_std: 5.174937266290123
+          logs:
+            init_reset: 2000
+            init_predict: 78000
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        FS-DF|x0=[0.0, 1.5]:
+          max_k_violation: 0.0015
+          max_k_cp95_upper: 0.004377320104529616
+          cost_mean: 16363.122169270317
+          cost_std: 2854.2924822463824
+          logs:
+            init_reset: 48201
+            init_predict: 31799
+            infeasible: 0
+            unresolved: 31
+            used_shift: 31
+        FS-DF|x0=[-0.1, 1.3]:
+          max_k_violation: 0.001
+          max_k_cp95_upper: 0.0036076285698285315
+          cost_mean: 2892.984214478016
+          cost_std: 1238.168003640049
+          logs:
+            init_reset: 44699
+            init_predict: 35301
+            infeasible: 0
+            unresolved: 4
+            used_shift: 4
+        FS-DF-T0|x0=[0.0, 1.5]:
+          max_k_violation: 0.0015
+          max_k_cp95_upper: 0.004377320104529616
+          cost_mean: 16327.7461302928
+          cost_std: 2722.349368952661
+          logs:
+            init_reset: 68747
+            init_predict: 11253
+            infeasible: 0
+            unresolved: 3
+            used_shift: 3
+        FS-DF|x0=[-0.1, 1.2]:
+          max_k_violation: 0.001
+          max_k_cp95_upper: 0.0036076285698285315
+          cost_mean: 717.3690140967103
+          cost_std: 222.43517200674535
+          logs:
+            init_reset: 44762
+            init_predict: 35238
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        FS-DF-T0|x0=[-0.1, 1.2]:
+          max_k_violation: 0.0015
+          max_k_cp95_upper: 0.004377320104529616
+          cost_mean: 795.7562661808718
+          cost_std: 314.40557038113195
+          logs:
+            init_reset: 66538
+            init_predict: 13462
+            infeasible: 0
+            unresolved: 0
+            used_shift: 0
+        FS-DF-T0|x0=[-0.1, 1.3]:
+          max_k_violation: 0.001
+          max_k_cp95_upper: 0.0036076285698285315
+          cost_mean: 2957.300351737411
+          cost_std: 1217.713469336943
+          logs:
+            init_reset: 66125
+            init_predict: 13875
+            infeasible: 0
+            unresolved: 2
+            used_shift: 2
+      m24_vs_cxa_max_abs_cost_diff:
+        '[-0.1, 1.2]': 0.004379959670899325
+        '[-0.1, 1.3]': 9.454882547288435e-05
+        '[-0.1, 1.4]': 2.520851921872236e-05
+        '[0.0, 1.5]': 2.086397034872789e-05
+    scope:
+      environment: numerical simulation (L1)
+      trials: 2000
+      label: REVISION-v7 final Table 1 run, added after the freeze
+    verified: false
+  E023:
+    type: design_record
+    evidence_level: L0
+    source:
+      file: results/EXP023_terminal_params/params.json
+      commit: null
+    experiment:
+      id: EXP023
+    protocol:
+      simulator: deterministic terminal design (cxsmpc/terminal.py)
+      controller: selected (lambda, H0, alpha, gamma_bar) per design
+      scenario: all designs used in the paper
+    metrics:
+      D, Cantelli kappa=3:
+        f: 0.1
+        lam: 0.9312624354392911
+        H0: I
+        alpha: 3.370327099457627
+        gamma: 2.20726454111755
+        rho_L: 0.923624928265879
+      D, normal quantile kappa=1.28:
+        f: 0.1
+        lam: 0.9312624354392911
+        H0: I
+        alpha: 6.1252413161923
+        gamma: 4.011488370133325
+        rho_L: 0.923624928265879
+      MF2026 beta=1.0, SOC design:
+        f: 0.25
+        lam: 0.6103602500910137
+        H0: hh'+1e-3 I
+        alpha: 2.2404603728303925
+        gamma: 14.965084640571368
+        rho_L: 0.480480333454685
+      MF2026 beta=1.0, coupling-agnostic design:
+        f: 0.25
+        lam: 0.6103602500910137
+        H0: hh'+1e-3 I
+        alpha: 9.505568816576904
+        gamma: 10.802915618216973
+        rho_L: 0.480480333454685
+      MF2026 beta=1.5, SOC design:
+        f: 0.25
+        lam: 0.6825662580649785
+        H0: hh'+1e-3 I
+        alpha: 0.0041779532250337086
+        gamma: 24.46789790136469
+        rho_L: 0.5767550107533046
+      MF2026 beta=1.5, coupling-agnostic design:
+        f: 0.25
+        lam: 0.6825662580649785
+        H0: hh'+1e-3 I
+        alpha: 0.004939694326448308
+        gamma: 24.444844231080378
+        rho_L: 0.5767550107533046
+    scope:
+      environment: offline design
+      trials: 1
+      label: REVISION-v7 appendix table, added after the freeze
     verified: false
