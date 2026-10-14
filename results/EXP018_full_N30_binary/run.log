@@ -1,0 +1,5 @@
+CX-DF [-0.1, 1.2] terminal ok {'max_k_violation': 0.0015, 'max_k_cp95_upper': 0.004377320104529616, 'cost_mean': 116.74999415069614}
+CX-DF [-0.1, 1.3] terminal ok {'max_k_violation': 0.003, 'max_k_cp95_upper': 0.00651821860997453, 'cost_mean': 319.30155417540715}
+CX-DF [-0.1, 1.4] terminal ok {'max_k_violation': 0.002, 'max_k_cp95_upper': 0.005112808605346209, 'cost_mean': 1017.4895939713216}
+CX-DF [0.0, 1.5] terminal ok {'max_k_violation': 0.0035, 'max_k_cp95_upper': 0.007197961714658002, 'cost_mean': 2192.54492619102}
+ALL_DONE

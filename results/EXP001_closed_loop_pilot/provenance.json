@@ -1,0 +1,56 @@
+{
+  "timestamp": "2026-10-02T20:41:03",
+  "command": "scripts/exp001_closed_loop.py",
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "scipy": "1.15.2",
+  "cvxpy": "1.7.5",
+  "clarabel": "0.11.1",
+  "cpu": "AMD Ryzen 7 5800H with Radeon Graphics",
+  "os": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "git_commit": null,
+  "source_sha256": {
+    "cxsmpc/__init__.py": "8b1faa9a38862efcadf1a38672a84cd4fac3acbb32506080617005db5235df0a",
+    "cxsmpc/benchmarks.py": "269c11631adbc0328bfa696e33bee1f399e4072de401c604f272b4a1fc62f654",
+    "cxsmpc/closedloop.py": "b072a70fcb3dbd4f8e30e697703fe6fe4f5a92635d3aa54e46ddbb85d9ee2597",
+    "cxsmpc/kernels.py": "b718c9a98be73f108ba2ce1d11f3d70c9d374204d55736c8931b6d234d814b1e",
+    "cxsmpc/model.py": "acdf10ea2098592e8e1eceaedd078a0c6a08ec32284cbfc402377d5647394bd3",
+    "cxsmpc/ocp.py": "e526279a5cd1cabecafd81ada21bd18488fe8a5af5467c6a11c3a4c6cb6f7a80",
+    "cxsmpc/provenance.py": "1ae6c4e7eb0a2910465c285d74e58df7e34af42eff09e97cd8c9d816fd115c35",
+    "scripts/exp001_closed_loop.py": "49bdb8a99bbdd13318cabdfcda1a2d1d624136bca977d92b946ccdc29e3d263b"
+  },
+  "config": {
+    "N": 10,
+    "T": 40,
+    "runs": 500,
+    "x0": [
+      [
+        -0.1,
+        1.2
+      ],
+      [
+        -0.1,
+        1.3
+      ],
+      [
+        -0.1,
+        1.4
+      ],
+      [
+        0.0,
+        1.5
+      ]
+    ],
+    "p": 0.9,
+    "seed": 7000,
+    "obj_scale": 0.001,
+    "fallback_max_iters": 20000,
+    "fs_eps": 0.5,
+    "K_alt_R_factor": 0.1,
+    "ref_tracking": [
+      -1.0,
+      1.5
+    ]
+  },
+  "note": "Project is not a git repository; source SHA-256 recorded instead."
+}

@@ -1,0 +1,73 @@
+{
+  "timestamp": "2026-10-03T00:00:02",
+  "command": "scripts/exp004_ablation_envelope.py",
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "scipy": "1.15.2",
+  "cvxpy": "1.7.5",
+  "clarabel": "0.11.1",
+  "cpu": "AMD Ryzen 7 5800H with Radeon Graphics",
+  "os": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "git_commit": null,
+  "source_sha256": {
+    "cxsmpc/__init__.py": "8b1faa9a38862efcadf1a38672a84cd4fac3acbb32506080617005db5235df0a",
+    "cxsmpc/benchmarks.py": "282e609ef12cfda970d794be7face902212ed2bd22c3c0722ac07532abf03f05",
+    "cxsmpc/closedloop.py": "a7bcda0bc52e44efc32966d2c6a9405aec4359724fb43c4e46af08e1ac796041",
+    "cxsmpc/kernels.py": "b718c9a98be73f108ba2ce1d11f3d70c9d374204d55736c8931b6d234d814b1e",
+    "cxsmpc/model.py": "903335a1a93c273988c1444ebd1b4433e9af5cf8f558e240c576795de8f43048",
+    "cxsmpc/ocp.py": "f82b4f386a7c71e31cbf49064834413391469f6a6feb17bfa8413cf638871860",
+    "cxsmpc/provenance.py": "1ae6c4e7eb0a2910465c285d74e58df7e34af42eff09e97cd8c9d816fd115c35",
+    "cxsmpc/terminal.py": "1767e5ff941cfeddad7128b03e4cc2d0025911a6013ea8090cc2a85063861996",
+    "scripts/exp004_ablation_envelope.py": "be382d2694d9ded2a38f87aacdc3d3a702bcbdd8826134de088a547c841c02ef"
+  },
+  "config": {
+    "runs": 2000,
+    "runs_perrun": 500,
+    "T": 30,
+    "p": 0.9,
+    "seed": 11000,
+    "obj_scale": 0.001,
+    "fallback_max_iters": 20000,
+    "terminal_margin": 0.02,
+    "A": {
+      "N": 15,
+      "b": 12.0,
+      "r": [
+        8,
+        16
+      ],
+      "s": 1.0
+    },
+    "D": {
+      "N": 10,
+      "x0": [
+        [
+          -0.1,
+          1.2
+        ],
+        [
+          -0.1,
+          1.4
+        ],
+        [
+          0.0,
+          1.5
+        ]
+      ]
+    },
+    "tails": [
+      "gauss",
+      "laplace",
+      "t5",
+      "t3"
+    ],
+    "cp_scale": [
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0
+    ]
+  },
+  "note": "Project is not a git repository; source SHA-256 recorded instead."
+}

@@ -1,0 +1,1124 @@
+{
+  "label": "PILOT",
+  "det": [
+    {
+      "task": [
+        "A2/A4",
+        "A",
+        "exact",
+        [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "true",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.480480333454685,
+      "max_k": 0.004,
+      "cp95_upper": 0.007866303828537383,
+      "time_avg": 0.0002666666666666667,
+      "cost_mean": 356.55827053662927,
+      "cost_std": 162.69558038126732,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "A2/A4",
+        "A",
+        "nomcost",
+        [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "true",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.480480333454685,
+      "max_k": 0.0055,
+      "cp95_upper": 0.009819662989899393,
+      "time_avg": 0.00045,
+      "cost_mean": 358.96045521732685,
+      "cost_std": 175.03657291113484,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "A2/A4",
+        "A",
+        "gaussk",
+        [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "true",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.480480333454685,
+      "max_k": 0.004,
+      "cp95_upper": 0.007866303828537383,
+      "time_avg": 0.0002666666666666667,
+      "cost_mean": 356.5582705334864,
+      "cost_std": 162.69558057193927,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "A5",
+        "A",
+        "exact",
+        [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "true",
+        "lqr",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.5004236128263322,
+      "max_k": 0.005,
+      "cp95_upper": 0.009175895070019778,
+      "time_avg": 0.0003333333333333333,
+      "cost_mean": 353.86128491856215,
+      "cost_std": 164.22269539319007,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "A2/A4",
+        "A",
+        "exact",
+        [
+          0.0,
+          0.0,
+          16.0
+        ],
+        "true",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.480480333454685,
+      "max_k": 0.009,
+      "cp95_upper": 0.014186714471514504,
+      "time_avg": 0.0006999999999999999,
+      "cost_mean": 1188.9718631261196,
+      "cost_std": 386.7337192911243,
+      "shift_steps": 1
+    },
+    {
+      "task": [
+        "A2/A4",
+        "A",
+        "nomcost",
+        [
+          0.0,
+          0.0,
+          16.0
+        ],
+        "true",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.480480333454685,
+      "max_k": 0.009,
+      "cp95_upper": 0.014186714471514504,
+      "time_avg": 0.0007166666666666666,
+      "cost_mean": 1189.0597975003022,
+      "cost_std": 387.0329483864758,
+      "shift_steps": 1
+    },
+    {
+      "task": [
+        "A2/A4",
+        "A",
+        "gaussk",
+        [
+          0.0,
+          0.0,
+          16.0
+        ],
+        "true",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.480480333454685,
+      "max_k": 0.05,
+      "cp95_upper": 0.06048172208315189,
+      "time_avg": 0.003633333333333334,
+      "cost_mean": 899.3858471441323,
+      "cost_std": 538.1560903870245,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "A5",
+        "A",
+        "exact",
+        [
+          0.0,
+          0.0,
+          16.0
+        ],
+        "true",
+        "lqr",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.5004236128263322,
+      "max_k": 0.008,
+      "cp95_upper": 0.01295906858847171,
+      "time_avg": 0.0007,
+      "cost_mean": 1186.4347442573958,
+      "cost_std": 390.2705165024031,
+      "shift_steps": 1
+    },
+    {
+      "task": [
+        "A2/A4",
+        "D",
+        "exact",
+        [
+          -0.1,
+          1.2
+        ],
+        "gauss",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.923624928265879,
+      "max_k": 0.003,
+      "cp95_upper": 0.00651821860997453,
+      "time_avg": 0.0004333333333333333,
+      "cost_mean": 2507.198328948501,
+      "cost_std": 4.950689524472208,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "A2/A4",
+        "D",
+        "nomcost",
+        [
+          -0.1,
+          1.2
+        ],
+        "gauss",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.923624928265879,
+      "max_k": 0.003,
+      "cp95_upper": 0.00651821860997453,
+      "time_avg": 0.0004333333333333333,
+      "cost_mean": 2507.201754028745,
+      "cost_std": 4.971627668832503,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "A2/A4",
+        "D",
+        "gaussk",
+        [
+          -0.1,
+          1.2
+        ],
+        "gauss",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.923624928265879,
+      "max_k": 0.1055,
+      "cp95_upper": 0.1197963218883864,
+      "time_avg": 0.029833333333333333,
+      "cost_mean": 652.7806899047955,
+      "cost_std": 9.823280327557072,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "E5-tails",
+        "D",
+        "exact",
+        [
+          -0.1,
+          1.2
+        ],
+        "laplace",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.923624928265879,
+      "max_k": 0.0035,
+      "cp95_upper": 0.007197961714658002,
+      "time_avg": 0.0005,
+      "cost_mean": 2507.1683617345166,
+      "cost_std": 4.858961793364965,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "E5-tails",
+        "D",
+        "gaussk",
+        [
+          -0.1,
+          1.2
+        ],
+        "laplace",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.923624928265879,
+      "max_k": 0.0845,
+      "cp95_upper": 0.09755772481691705,
+      "time_avg": 0.0256,
+      "cost_mean": 652.8201048359666,
+      "cost_std": 9.599860710276635,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "E5-tails",
+        "D",
+        "exact",
+        [
+          -0.1,
+          1.2
+        ],
+        "t5",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.923624928265879,
+      "max_k": 0.0055,
+      "cp95_upper": 0.009819662989899393,
+      "time_avg": 0.0011833333333333333,
+      "cost_mean": 2507.136456377162,
+      "cost_std": 4.904822784043601,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "E5-tails",
+        "D",
+        "gaussk",
+        [
+          -0.1,
+          1.2
+        ],
+        "t5",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.923624928265879,
+      "max_k": 0.082,
+      "cp95_upper": 0.09489669671628181,
+      "time_avg": 0.0252,
+      "cost_mean": 652.694514216948,
+      "cost_std": 9.804699192069378,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "E5-tails",
+        "D",
+        "exact",
+        [
+          -0.1,
+          1.2
+        ],
+        "t3",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.923624928265879,
+      "max_k": 0.006,
+      "cp95_upper": 0.010457313821794881,
+      "time_avg": 0.0012500000000000002,
+      "cost_mean": 2507.1028623180205,
+      "cost_std": 4.656681935157887,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "E5-tails",
+        "D",
+        "gaussk",
+        [
+          -0.1,
+          1.2
+        ],
+        "t3",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.923624928265879,
+      "max_k": 0.0665,
+      "cp95_upper": 0.078318872562347,
+      "time_avg": 0.02065,
+      "cost_mean": 652.5255256327362,
+      "cost_std": 9.488318753789255,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "E5-Cp",
+        "D",
+        "exact",
+        [
+          -0.1,
+          1.2
+        ],
+        "gauss",
+        "default",
+        1.5
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.9261631361149034
+    },
+    {
+      "task": [
+        "E5-Cp",
+        "D",
+        "exact",
+        [
+          -0.1,
+          1.2
+        ],
+        "gauss",
+        "default",
+        2.0
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.9296257891053531
+    },
+    {
+      "task": [
+        "E5-Cp",
+        "D",
+        "exact",
+        [
+          -0.1,
+          1.2
+        ],
+        "gauss",
+        "default",
+        2.5
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.9339347786038709
+    },
+    {
+      "task": [
+        "E5-Cp",
+        "D",
+        "exact",
+        [
+          -0.1,
+          1.2
+        ],
+        "gauss",
+        "default",
+        3.0
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.9390052439709695
+    },
+    {
+      "task": [
+        "A2/A4",
+        "D",
+        "exact",
+        [
+          -0.1,
+          1.4
+        ],
+        "gauss",
+        "default",
+        1.0
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.923624928265879
+    },
+    {
+      "task": [
+        "A2/A4",
+        "D",
+        "nomcost",
+        [
+          -0.1,
+          1.4
+        ],
+        "gauss",
+        "default",
+        1.0
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.923624928265879
+    },
+    {
+      "task": [
+        "A2/A4",
+        "D",
+        "gaussk",
+        [
+          -0.1,
+          1.4
+        ],
+        "gauss",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.923624928265879,
+      "max_k": 0.1085,
+      "cp95_upper": 0.12295857766945967,
+      "time_avg": 0.030483333333333338,
+      "cost_mean": 2493.698247095435,
+      "cost_std": 5.0602785925456315,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "E5-tails",
+        "D",
+        "exact",
+        [
+          -0.1,
+          1.4
+        ],
+        "laplace",
+        "default",
+        1.0
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.923624928265879
+    },
+    {
+      "task": [
+        "E5-tails",
+        "D",
+        "gaussk",
+        [
+          -0.1,
+          1.4
+        ],
+        "laplace",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.923624928265879,
+      "max_k": 0.091,
+      "cp95_upper": 0.10446191055210695,
+      "time_avg": 0.026616666666666667,
+      "cost_mean": 2493.696350760598,
+      "cost_std": 4.919341910766942,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "E5-tails",
+        "D",
+        "exact",
+        [
+          -0.1,
+          1.4
+        ],
+        "t5",
+        "default",
+        1.0
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.923624928265879
+    },
+    {
+      "task": [
+        "E5-tails",
+        "D",
+        "gaussk",
+        [
+          -0.1,
+          1.4
+        ],
+        "t5",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.923624928265879,
+      "max_k": 0.0965,
+      "cp95_upper": 0.11028872648373826,
+      "time_avg": 0.02815,
+      "cost_mean": 2493.5312902520486,
+      "cost_std": 5.084495676417619,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "E5-tails",
+        "D",
+        "exact",
+        [
+          -0.1,
+          1.4
+        ],
+        "t3",
+        "default",
+        1.0
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.923624928265879
+    },
+    {
+      "task": [
+        "E5-tails",
+        "D",
+        "gaussk",
+        [
+          -0.1,
+          1.4
+        ],
+        "t3",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.923624928265879,
+      "max_k": 0.0735,
+      "cp95_upper": 0.08582370833307536,
+      "time_avg": 0.021483333333333337,
+      "cost_mean": 2493.4893089291627,
+      "cost_std": 4.931426206176631,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "E5-Cp",
+        "D",
+        "exact",
+        [
+          -0.1,
+          1.4
+        ],
+        "gauss",
+        "default",
+        1.5
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.9261631361149034
+    },
+    {
+      "task": [
+        "E5-Cp",
+        "D",
+        "exact",
+        [
+          -0.1,
+          1.4
+        ],
+        "gauss",
+        "default",
+        2.0
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.9296257891053531
+    },
+    {
+      "task": [
+        "E5-Cp",
+        "D",
+        "exact",
+        [
+          -0.1,
+          1.4
+        ],
+        "gauss",
+        "default",
+        2.5
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.9339347786038709
+    },
+    {
+      "task": [
+        "E5-Cp",
+        "D",
+        "exact",
+        [
+          -0.1,
+          1.4
+        ],
+        "gauss",
+        "default",
+        3.0
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.9390052439709695
+    },
+    {
+      "task": [
+        "A2/A4",
+        "D",
+        "exact",
+        [
+          0.0,
+          1.5
+        ],
+        "gauss",
+        "default",
+        1.0
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.923624928265879
+    },
+    {
+      "task": [
+        "A2/A4",
+        "D",
+        "nomcost",
+        [
+          0.0,
+          1.5
+        ],
+        "gauss",
+        "default",
+        1.0
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.923624928265879
+    },
+    {
+      "task": [
+        "A2/A4",
+        "D",
+        "gaussk",
+        [
+          0.0,
+          1.5
+        ],
+        "gauss",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.923624928265879,
+      "max_k": 0.1075,
+      "cp95_upper": 0.12190486047220035,
+      "time_avg": 0.03206666666666667,
+      "cost_mean": 3822.106255592605,
+      "cost_std": 4.964058186212276,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "E5-tails",
+        "D",
+        "exact",
+        [
+          0.0,
+          1.5
+        ],
+        "laplace",
+        "default",
+        1.0
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.923624928265879
+    },
+    {
+      "task": [
+        "E5-tails",
+        "D",
+        "gaussk",
+        [
+          0.0,
+          1.5
+        ],
+        "laplace",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.923624928265879,
+      "max_k": 0.0915,
+      "cp95_upper": 0.10499217657511724,
+      "time_avg": 0.0286,
+      "cost_mean": 3822.139364520902,
+      "cost_std": 4.842759003495697,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "E5-tails",
+        "D",
+        "exact",
+        [
+          0.0,
+          1.5
+        ],
+        "t5",
+        "default",
+        1.0
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.923624928265879
+    },
+    {
+      "task": [
+        "E5-tails",
+        "D",
+        "gaussk",
+        [
+          0.0,
+          1.5
+        ],
+        "t5",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.923624928265879,
+      "max_k": 0.1,
+      "cp95_upper": 0.11398997429542672,
+      "time_avg": 0.029599999999999998,
+      "cost_mean": 3821.9504412229767,
+      "cost_std": 4.980974812132235,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "E5-tails",
+        "D",
+        "exact",
+        [
+          0.0,
+          1.5
+        ],
+        "t3",
+        "default",
+        1.0
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.923624928265879
+    },
+    {
+      "task": [
+        "E5-tails",
+        "D",
+        "gaussk",
+        [
+          0.0,
+          1.5
+        ],
+        "t3",
+        "default",
+        1.0
+      ],
+      "status": "ok",
+      "rho_L": 0.923624928265879,
+      "max_k": 0.0765,
+      "cp95_upper": 0.08903064834649911,
+      "time_avg": 0.023716666666666667,
+      "cost_mean": 3821.9348023761463,
+      "cost_std": 4.846965792691972,
+      "shift_steps": 0
+    },
+    {
+      "task": [
+        "E5-Cp",
+        "D",
+        "exact",
+        [
+          0.0,
+          1.5
+        ],
+        "gauss",
+        "default",
+        1.5
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.9261631361149034
+    },
+    {
+      "task": [
+        "E5-Cp",
+        "D",
+        "exact",
+        [
+          0.0,
+          1.5
+        ],
+        "gauss",
+        "default",
+        2.0
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.9296257891053531
+    },
+    {
+      "task": [
+        "E5-Cp",
+        "D",
+        "exact",
+        [
+          0.0,
+          1.5
+        ],
+        "gauss",
+        "default",
+        2.5
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.9339347786038709
+    },
+    {
+      "task": [
+        "E5-Cp",
+        "D",
+        "exact",
+        [
+          0.0,
+          1.5
+        ],
+        "gauss",
+        "default",
+        3.0
+      ],
+      "status": "infeasible at x0",
+      "rho_L": 0.9390052439709695
+    }
+  ],
+  "A3": [
+    {
+      "task": [
+        "A3",
+        "A",
+        [
+          -0.1,
+          1.2
+        ]
+      ],
+      "status": "ok",
+      "max_k": 0.012,
+      "cp95_upper": 0.025934927265336975,
+      "time_avg": 0.0037333333333333337,
+      "cost_mean": 162.66121270421846,
+      "cost_std": 4.019106183587394,
+      "logs": {
+        "init_reset": 500,
+        "init_predict": 14500,
+        "infeasible": 0,
+        "unresolved": 0,
+        "used_shift": 0
+      }
+    },
+    {
+      "task": [
+        "A3",
+        "A",
+        [
+          -0.1,
+          1.4
+        ]
+      ],
+      "status": "ok",
+      "max_k": 0.024,
+      "cp95_upper": 0.04154761879968625,
+      "time_avg": 0.0044666666666666665,
+      "cost_mean": 1043.8507436128577,
+      "cost_std": 2.0528089625216754,
+      "logs": {
+        "init_reset": 500,
+        "init_predict": 14500,
+        "infeasible": 0,
+        "unresolved": 0,
+        "used_shift": 0
+      }
+    },
+    {
+      "task": [
+        "A3",
+        "A",
+        [
+          0.0,
+          1.5
+        ]
+      ],
+      "status": "ok",
+      "max_k": 0.028,
+      "cp95_upper": 0.04653332699148415,
+      "time_avg": 0.0044,
+      "cost_mean": 2224.917507580221,
+      "cost_std": 2.0623110640905375,
+      "logs": {
+        "init_reset": 500,
+        "init_predict": 14500,
+        "infeasible": 0,
+        "unresolved": 0,
+        "used_shift": 0
+      }
+    },
+    {
+      "task": [
+        "A3",
+        "DF",
+        [
+          -0.1,
+          1.2
+        ]
+      ],
+      "status": "ok",
+      "max_k": 0.002,
+      "cp95_upper": 0.011092476898968787,
+      "time_avg": 0.0004,
+      "cost_mean": 125.07400275351216,
+      "cost_std": 51.6002071434024,
+      "logs": {
+        "init_reset": 14994,
+        "init_predict": 6,
+        "infeasible": 0,
+        "unresolved": 0,
+        "used_shift": 0
+      }
+    },
+    {
+      "task": [
+        "A3",
+        "DF",
+        [
+          -0.1,
+          1.4
+        ]
+      ],
+      "status": "ok",
+      "max_k": 0.006,
+      "cp95_upper": 0.017433673725913514,
+      "time_avg": 0.0006666666666666666,
+      "cost_mean": 1011.5787857121014,
+      "cost_std": 51.298484003938924,
+      "logs": {
+        "init_reset": 14983,
+        "init_predict": 17,
+        "infeasible": 0,
+        "unresolved": 0,
+        "used_shift": 0
+      }
+    },
+    {
+      "task": [
+        "A3",
+        "DF",
+        [
+          0.0,
+          1.5
+        ]
+      ],
+      "status": "ok",
+      "max_k": 0.004,
+      "cp95_upper": 0.014374078562200309,
+      "time_avg": 0.00046666666666666666,
+      "cost_mean": 2185.115988671647,
+      "cost_std": 61.93203700922034,
+      "logs": {
+        "init_reset": 14983,
+        "init_predict": 17,
+        "infeasible": 0,
+        "unresolved": 0,
+        "used_shift": 0
+      }
+    },
+    {
+      "task": [
+        "A3",
+        "R",
+        [
+          -0.1,
+          1.2
+        ]
+      ],
+      "status": "ok",
+      "max_k": 0.002,
+      "cp95_upper": 0.011092476898968787,
+      "time_avg": 0.0006666666666666668,
+      "cost_mean": 125.0741688868748,
+      "cost_std": 51.60114378698836,
+      "logs": {
+        "init_reset": 14990,
+        "init_predict": 0,
+        "infeasible": 10,
+        "unresolved": 0,
+        "used_shift": 0
+      }
+    },
+    {
+      "task": [
+        "A3",
+        "R",
+        [
+          -0.1,
+          1.4
+        ]
+      ],
+      "status": "ok",
+      "max_k": 0.014,
+      "cp95_upper": 0.028631616183336053,
+      "time_avg": 0.0038666666666666663,
+      "cost_mean": 1011.5259324494486,
+      "cost_std": 51.267426047898965,
+      "logs": {
+        "init_reset": 14936,
+        "init_predict": 0,
+        "infeasible": 64,
+        "unresolved": 0,
+        "used_shift": 0
+      }
+    },
+    {
+      "task": [
+        "A3",
+        "R",
+        [
+          0.0,
+          1.5
+        ]
+      ],
+      "status": "ok",
+      "max_k": 0.02,
+      "cp95_upper": 0.03647240829220973,
+      "time_avg": 0.005000000000000001,
+      "cost_mean": 2185.00184902468,
+      "cost_std": 61.916064627770005,
+      "logs": {
+        "init_reset": 14915,
+        "init_predict": 0,
+        "infeasible": 85,
+        "unresolved": 0,
+        "used_shift": 0
+      }
+    }
+  ]
+}

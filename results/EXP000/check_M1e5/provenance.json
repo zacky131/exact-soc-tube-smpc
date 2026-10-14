@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-10-02T18:11:04",
+  "command": "-",
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "scipy": "1.15.2",
+  "cvxpy": "1.7.5",
+  "clarabel": "0.11.1",
+  "cpu": "AMD Ryzen 7 5800H with Radeon Graphics",
+  "os": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "git_commit": null,
+  "source_sha256": {
+    "cxsmpc/__init__.py": "8b1faa9a38862efcadf1a38672a84cd4fac3acbb32506080617005db5235df0a",
+    "cxsmpc/benchmarks.py": "269c11631adbc0328bfa696e33bee1f399e4072de401c604f272b4a1fc62f654",
+    "cxsmpc/kernels.py": "80f761bc9ff0da7293977c7a4cd1bbb68132f768c52fc8ca451ec6c1dbe59722",
+    "cxsmpc/model.py": "acdf10ea2098592e8e1eceaedd078a0c6a08ec32284cbfc402377d5647394bd3",
+    "cxsmpc/ocp.py": "7479a316491767ca6cb52025e80dc7cf61ef57492fe3cc430e80520dbaf1a7da",
+    "cxsmpc/provenance.py": "1ae6c4e7eb0a2910465c285d74e58df7e34af42eff09e97cd8c9d816fd115c35",
+    "scripts/exp000_cov_validation.py": "c7894ad73ea4e6d380e17c572361b292beb3d9494b378c7892a2333bd4991c67"
+  },
+  "config": {
+    "N": 10,
+    "n_plans": 20,
+    "M": 100000,
+    "n_batches": 20,
+    "seed_plans": 1000,
+    "seed_mc": 2000,
+    "noise_D": [
+      "gauss",
+      "t5",
+      "rademacher"
+    ],
+    "p": 0.9,
+    "bench_A_constraint": {
+      "h": [
+        1,
+        0,
+        0
+      ],
+      "b": 3.0,
+      "note": "SOURCE: ours (AP002 has no constraints)"
+    },
+    "bench_A_cost": {
+      "Q": "I3",
+      "R": "1",
+      "P": "terminal_weight(K)"
+    }
+  },
+  "note": "Project is not a git repository; source SHA-256 recorded instead."
+}

@@ -1,0 +1,89 @@
+part1 row 1/17
+part1 row 2/17
+part1 row 3/17
+part1 row 4/17
+part1 row 5/17
+part1 row 6/17
+part1 row 7/17
+part1 row 8/17
+part1 row 9/17
+part1 row 10/17
+part1 row 11/17
+part1 row 12/17
+part1 row 13/17
+part1 row 14/17
+part1 row 15/17
+part1 row 16/17
+part1 row 17/17
+{
+ "grid_points": 289,
+ "classification": "verified_feasible / certified_infeasible / unresolved (a-posteriori check of exact Cantelli + FS own LMI/constraints, tol 1e-6)",
+ "area_fractions": {
+  "CX": {
+   "verified_feasible": 0.5709342560553633,
+   "certified_infeasible": 0.4290657439446367,
+   "unresolved": 0.0
+  },
+  "FS(eps=0.1)": {
+   "verified_feasible": 0.4982698961937716,
+   "certified_infeasible": 0.43252595155709345,
+   "unresolved": 0.06920415224913495
+  },
+  "FS(eps=0.3)": {
+   "verified_feasible": 0.5017301038062284,
+   "certified_infeasible": 0.43944636678200694,
+   "unresolved": 0.058823529411764705
+  },
+  "FS(eps=0.5)": {
+   "verified_feasible": 0.5121107266435986,
+   "certified_infeasible": 0.4429065743944637,
+   "unresolved": 0.04498269896193772
+  },
+  "FS(eps=0.7)": {
+   "verified_feasible": 0.5190311418685121,
+   "certified_infeasible": 0.4359861591695502,
+   "unresolved": 0.04498269896193772
+  },
+  "FS(eps=0.9)": {
+   "verified_feasible": 0.5259515570934256,
+   "certified_infeasible": 0.4186851211072664,
+   "unresolved": 0.05536332179930796
+  }
+ },
+ "containment_violations_feasibility_verified": 0,
+ "containment_violations_cost_verified": 0,
+ "cost_ratio_CX_over_FS_on_joint_verified": {
+  "FS(eps=0.1)": {
+   "n": 144,
+   "median": 0.988379181933667,
+   "min": 1.108860575141454e-14,
+   "max": 0.9999999999387311
+  },
+  "FS(eps=0.3)": {
+   "n": 145,
+   "median": 0.9999999953830112,
+   "min": 1.5250866379796597e-14,
+   "max": 0.9999999999409631
+  },
+  "FS(eps=0.5)": {
+   "n": 148,
+   "median": 0.9999999966324437,
+   "min": 3.010074326577671e-14,
+   "max": 0.9999999999577222
+  },
+  "FS(eps=0.7)": {
+   "n": 150,
+   "median": 0.9999999971779012,
+   "min": 6.769853045424164e-14,
+   "max": 0.999999999947065
+  },
+  "FS(eps=0.9)": {
+   "n": 152,
+   "median": 0.9999999970945106,
+   "min": 6.791313511820183e-14,
+   "max": 0.9999999999607104
+  }
+ }
+}
+PART_DONE part1
+EXIT 0

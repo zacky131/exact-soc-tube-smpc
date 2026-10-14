@@ -1,0 +1,40 @@
+{
+  "D": {
+    "audit": {
+      "kernel_max_rel_err": 1.0061396160665481e-16,
+      "cantelli_max_violation": 1.0384137993924014e-10,
+      "cost_max_rel_err": 6.385682829329309e-16,
+      "statuses": {
+        "optimal": 20
+      },
+      "n_plans": 20,
+      "tries": 27
+    },
+    "noise": {
+      "gauss": {
+        "n_entries": 600,
+        "frac_abs_z_gt3": 0.0033333333333333335,
+        "frac_abs_z_gt2": 0.023333333333333334,
+        "max_abs_z": 3.223666725023097,
+        "reference_t19": {
+          "P_abs_gt3": 0.007361724183868639,
+          "P_abs_gt2": 0.060002036386098336
+        },
+        "median_rel_frob_err": 0.0026381676463371863,
+        "p95_rel_frob_err": 0.007313975475945432
+      },
+      "t5": {
+        "n_entries": 600,
+        "frac_abs_z_gt3": 0.018333333333333333,
+        "frac_abs_z_gt2": 0.09833333333333333,
+        "max_abs_z": 4.026600851199659,
+        "reference_t19": {
+          "P_abs_gt3": 0.007361724183868639,
+          "P_abs_gt2": 0.060002036386098336
+        },
+        "median_rel_frob_err": 0.00443862561633959,
+        "p95_rel_frob_err": 0.01258788156608556
+      }
+    }
+  }
+}

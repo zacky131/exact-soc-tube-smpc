@@ -1,0 +1,555 @@
+{
+  "label": "PILOT \u2014 reduced sample sizes; not the full E3",
+  "part1": {
+    "grid_points": 289,
+    "classification": "verified_feasible / certified_infeasible / unresolved (a-posteriori check of exact Cantelli + FS own LMI/constraints, tol 1e-6)",
+    "area_fractions": {
+      "CX": {
+        "verified_feasible": 0.5709342560553633,
+        "certified_infeasible": 0.4290657439446367,
+        "unresolved": 0.0
+      },
+      "FS(eps=0.1)": {
+        "verified_feasible": 0.4982698961937716,
+        "certified_infeasible": 0.4740484429065744,
+        "unresolved": 0.02768166089965398
+      },
+      "FS(eps=0.3)": {
+        "verified_feasible": 0.5017301038062284,
+        "certified_infeasible": 0.4740484429065744,
+        "unresolved": 0.02422145328719723
+      },
+      "FS(eps=0.5)": {
+        "verified_feasible": 0.5155709342560554,
+        "certified_infeasible": 0.45674740484429066,
+        "unresolved": 0.02768166089965398
+      },
+      "FS(eps=0.7)": {
+        "verified_feasible": 0.5190311418685121,
+        "certified_infeasible": 0.4671280276816609,
+        "unresolved": 0.01384083044982699
+      },
+      "FS(eps=0.9)": {
+        "verified_feasible": 0.5224913494809689,
+        "certified_infeasible": 0.45674740484429066,
+        "unresolved": 0.020761245674740483
+      }
+    },
+    "containment_violations_feasibility_verified": 0,
+    "containment_violations_cost_verified": 0,
+    "cost_ratio_CX_over_FS_on_joint_verified": {
+      "FS(eps=0.1)": {
+        "n": 144,
+        "median": 0.9883791819360948,
+        "min": 5.907665856103128e-11,
+        "max": 0.999999999896461
+      },
+      "FS(eps=0.3)": {
+        "n": 145,
+        "median": 0.9999999718632399,
+        "min": 1.0503604074358568e-10,
+        "max": 0.9999999999445927
+      },
+      "FS(eps=0.5)": {
+        "n": 149,
+        "median": 0.9999999907094695,
+        "min": 4.5332625455173466e-12,
+        "max": 0.9999999999304707
+      },
+      "FS(eps=0.7)": {
+        "n": 150,
+        "median": 0.999999995976093,
+        "min": 8.067227092482899e-12,
+        "max": 0.999999999950724
+      },
+      "FS(eps=0.9)": {
+        "n": 151,
+        "median": 0.9999999958408646,
+        "min": 8.39095617288506e-12,
+        "max": 0.99999999996425
+      }
+    }
+  },
+  "part2": [
+    {
+      "n": 2,
+      "N": 10,
+      "samples": 20,
+      "cx_ms": {
+        "p50": 3.0554825,
+        "p95": 4.2195655,
+        "p99": 4.2566155,
+        "mean": 3.22778585,
+        "max": 4.265878
+      },
+      "fs_ms": {
+        "p50": 1.4753414999999999,
+        "p95": 2.1776402000000004,
+        "p99": 2.2153240400000005,
+        "mean": 1.63463065,
+        "max": 2.2247450000000004
+      },
+      "median_ratio_fs_over_cx": 0.49860174864679574,
+      "cx_classes": {
+        "verified_feasible": 16,
+        "certified_infeasible": 4,
+        "unresolved": 0
+      },
+      "fs_classes": {
+        "verified_feasible": 16,
+        "certified_infeasible": 4,
+        "unresolved": 0
+      },
+      "containment_violations_verified": 0,
+      "cost_violations_verified": 0
+    },
+    {
+      "n": 2,
+      "N": 20,
+      "samples": 20,
+      "cx_ms": {
+        "p50": 14.1241405,
+        "p95": 16.7864361,
+        "p99": 16.88707682,
+        "mean": 14.1877432,
+        "max": 16.912237
+      },
+      "fs_ms": {
+        "p50": 2.870575,
+        "p95": 3.2096244499999997,
+        "p99": 3.2727872899999997,
+        "mean": 2.9065578000000003,
+        "max": 3.288578
+      },
+      "median_ratio_fs_over_cx": 0.2091647355162209,
+      "cx_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "fs_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "containment_violations_verified": 0,
+      "cost_violations_verified": 0
+    },
+    {
+      "n": 2,
+      "N": 30,
+      "samples": 20,
+      "cx_ms": {
+        "p50": 38.101864000000006,
+        "p95": 43.29925935,
+        "p99": 43.32420787,
+        "mean": 35.073283950000004,
+        "max": 43.330445000000005
+      },
+      "fs_ms": {
+        "p50": 4.2659815,
+        "p95": 5.99590745,
+        "p99": 6.02420149,
+        "mean": 4.68274955,
+        "max": 6.031275
+      },
+      "median_ratio_fs_over_cx": 0.1185476768166572,
+      "cx_classes": {
+        "verified_feasible": 16,
+        "certified_infeasible": 4,
+        "unresolved": 0
+      },
+      "fs_classes": {
+        "verified_feasible": 16,
+        "certified_infeasible": 4,
+        "unresolved": 0
+      },
+      "containment_violations_verified": 0,
+      "cost_violations_verified": 0
+    },
+    {
+      "n": 4,
+      "N": 10,
+      "samples": 20,
+      "cx_ms": {
+        "p50": 11.906483999999999,
+        "p95": 13.39933445,
+        "p99": 13.402730889999999,
+        "mean": 12.1224629,
+        "max": 13.40358
+      },
+      "fs_ms": {
+        "p50": 4.151372,
+        "p95": 4.5338349000000004,
+        "p99": 4.56737978,
+        "mean": 4.2240421,
+        "max": 4.575766
+      },
+      "median_ratio_fs_over_cx": 0.36749110602369284,
+      "cx_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "fs_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "containment_violations_verified": 0,
+      "cost_violations_verified": 0
+    },
+    {
+      "n": 4,
+      "N": 20,
+      "samples": 20,
+      "cx_ms": {
+        "p50": 68.564344,
+        "p95": 78.9823052,
+        "p99": 79.43114904,
+        "mean": 68.58761854999999,
+        "max": 79.54335999999999
+      },
+      "fs_ms": {
+        "p50": 8.244076,
+        "p95": 9.173778500000001,
+        "p99": 9.344162899999999,
+        "mean": 8.3574189,
+        "max": 9.386759
+      },
+      "median_ratio_fs_over_cx": 0.1181255919585063,
+      "cx_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "fs_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "containment_violations_verified": 0,
+      "cost_violations_verified": 0
+    },
+    {
+      "n": 4,
+      "N": 30,
+      "samples": 20,
+      "cx_ms": {
+        "p50": 166.625494,
+        "p95": 191.5162047,
+        "p99": 191.74731614,
+        "mean": 162.6938643,
+        "max": 191.805094
+      },
+      "fs_ms": {
+        "p50": 13.0644295,
+        "p95": 14.778652600000001,
+        "p99": 14.80763292,
+        "mean": 12.951458299999999,
+        "max": 14.814878
+      },
+      "median_ratio_fs_over_cx": 0.0794021032587032,
+      "cx_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "fs_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "containment_violations_verified": 0,
+      "cost_violations_verified": 0
+    },
+    {
+      "n": 6,
+      "N": 10,
+      "samples": 20,
+      "cx_ms": {
+        "p50": 31.848910999999994,
+        "p95": 34.411440750000004,
+        "p99": 34.67514175,
+        "mean": 31.938774049999996,
+        "max": 34.741067
+      },
+      "fs_ms": {
+        "p50": 10.447063499999999,
+        "p95": 11.39666505,
+        "p99": 11.55792261,
+        "mean": 10.6149649,
+        "max": 11.598237000000001
+      },
+      "median_ratio_fs_over_cx": 0.32123278705418606,
+      "cx_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "fs_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "containment_violations_verified": 0,
+      "cost_violations_verified": 0
+    },
+    {
+      "n": 6,
+      "N": 20,
+      "samples": 20,
+      "cx_ms": {
+        "p50": 213.1614525,
+        "p95": 223.32680495,
+        "p99": 225.99709459,
+        "mean": 210.90609555,
+        "max": 226.66466699999998
+      },
+      "fs_ms": {
+        "p50": 21.4255225,
+        "p95": 23.31437535,
+        "p99": 23.31883427,
+        "mean": 21.797395849999997,
+        "max": 23.319949
+      },
+      "median_ratio_fs_over_cx": 0.10543794154273739,
+      "cx_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "fs_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "containment_violations_verified": 0,
+      "cost_violations_verified": 0
+    },
+    {
+      "n": 6,
+      "N": 30,
+      "samples": 20,
+      "cx_ms": {
+        "p50": 561.1100265,
+        "p95": 598.2582090500001,
+        "p99": 642.0799010099998,
+        "mean": 549.2471997,
+        "max": 653.035324
+      },
+      "fs_ms": {
+        "p50": 30.922871,
+        "p95": 34.88586045,
+        "p99": 35.02408089,
+        "mean": 31.929354949999997,
+        "max": 35.058636
+      },
+      "median_ratio_fs_over_cx": 0.058577443886399766,
+      "cx_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "fs_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "containment_violations_verified": 0,
+      "cost_violations_verified": 0
+    },
+    {
+      "n": 8,
+      "N": 10,
+      "samples": 20,
+      "cx_ms": {
+        "p50": 65.20217299999999,
+        "p95": 70.20353965000001,
+        "p99": 75.94179272999997,
+        "mean": 66.769552,
+        "max": 77.37635599999999
+      },
+      "fs_ms": {
+        "p50": 28.7449225,
+        "p95": 32.78404100000001,
+        "p99": 33.1409978,
+        "mean": 28.332842,
+        "max": 33.230237
+      },
+      "median_ratio_fs_over_cx": 0.44085845271148066,
+      "cx_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "fs_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "containment_violations_verified": 0,
+      "cost_violations_verified": 0
+    },
+    {
+      "n": 8,
+      "N": 20,
+      "samples": 20,
+      "cx_ms": {
+        "p50": 502.721234,
+        "p95": 559.1866957999999,
+        "p99": 616.7638367599998,
+        "mean": 517.6298077,
+        "max": 631.1581219999999
+      },
+      "fs_ms": {
+        "p50": 55.8582265,
+        "p95": 61.972466600000004,
+        "p99": 67.15035572,
+        "mean": 56.478017799999996,
+        "max": 68.444828
+      },
+      "median_ratio_fs_over_cx": 0.10852337559070349,
+      "cx_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "fs_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "containment_violations_verified": 0,
+      "cost_violations_verified": 0
+    },
+    {
+      "n": 8,
+      "N": 30,
+      "samples": 20,
+      "cx_ms": {
+        "p50": 1553.3576105000002,
+        "p95": 1628.94574755,
+        "p99": 1700.7897415099999,
+        "mean": 1503.8750074999998,
+        "max": 1718.75074
+      },
+      "fs_ms": {
+        "p50": 89.17757449999999,
+        "p95": 101.0348053,
+        "p99": 101.73116746,
+        "mean": 92.42861185000001,
+        "max": 101.905258
+      },
+      "median_ratio_fs_over_cx": 0.06043656100504096,
+      "cx_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "fs_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "containment_violations_verified": 0,
+      "cost_violations_verified": 0
+    },
+    {
+      "n": 10,
+      "N": 10,
+      "samples": 20,
+      "cx_ms": {
+        "p50": 111.6779865,
+        "p95": 114.4033741,
+        "p99": 114.58782762,
+        "mean": 109.72775465,
+        "max": 114.63394100000001
+      },
+      "fs_ms": {
+        "p50": 110.853538,
+        "p95": 113.94891135,
+        "p99": 117.06332067,
+        "mean": 109.07950665000001,
+        "max": 117.841923
+      },
+      "median_ratio_fs_over_cx": 0.9992867614749399,
+      "cx_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "fs_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "containment_violations_verified": 0,
+      "cost_violations_verified": 0
+    },
+    {
+      "n": 10,
+      "N": 20,
+      "samples": 20,
+      "cx_ms": {
+        "p50": 861.4058155,
+        "p95": 932.4760288000001,
+        "p99": 945.1014497599999,
+        "mean": 864.7905360000001,
+        "max": 948.257805
+      },
+      "fs_ms": {
+        "p50": 231.2678955,
+        "p95": 268.50388895000003,
+        "p99": 307.18428578999993,
+        "mean": 235.68093215000005,
+        "max": 316.85438500000004
+      },
+      "median_ratio_fs_over_cx": 0.2633922206935412,
+      "cx_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "fs_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "containment_violations_verified": 0,
+      "cost_violations_verified": 0
+    },
+    {
+      "n": 10,
+      "N": 30,
+      "samples": 20,
+      "cx_ms": {
+        "p50": 2763.378366,
+        "p95": 3126.5065271,
+        "p99": 3195.14617182,
+        "mean": 2781.25534495,
+        "max": 3212.306083
+      },
+      "fs_ms": {
+        "p50": 397.573104,
+        "p95": 486.6734938,
+        "p99": 528.3372075599999,
+        "mean": 390.8887056,
+        "max": 538.7531359999999
+      },
+      "median_ratio_fs_over_cx": 0.1441282276404183,
+      "cx_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "fs_classes": {
+        "verified_feasible": 20,
+        "certified_infeasible": 0,
+        "unresolved": 0
+      },
+      "containment_violations_verified": 0,
+      "cost_violations_verified": 0
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "timestamp": "2026-10-02T22:52:53",
+  "command": "scripts/exp002_mechanism.py",
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "scipy": "1.15.2",
+  "cvxpy": "1.7.5",
+  "clarabel": "0.11.1",
+  "cpu": "AMD Ryzen 7 5800H with Radeon Graphics",
+  "os": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "git_commit": null,
+  "source_sha256": {
+    "cxsmpc/__init__.py": "8b1faa9a38862efcadf1a38672a84cd4fac3acbb32506080617005db5235df0a",
+    "cxsmpc/benchmarks.py": "1b581f6acffe310d89ab306ebeb2599366f3e2cf33fc70d2c344906cfee8462b",
+    "cxsmpc/closedloop.py": "9c48e5ab662aa99a7bad202d11c17913ae58b6251f35f334384ea2d01ce657f9",
+    "cxsmpc/kernels.py": "b718c9a98be73f108ba2ce1d11f3d70c9d374204d55736c8931b6d234d814b1e",
+    "cxsmpc/model.py": "903335a1a93c273988c1444ebd1b4433e9af5cf8f558e240c576795de8f43048",
+    "cxsmpc/ocp.py": "8d24b408a0c0bef81255649b741379e4a7cc012ab56794bb887082fe1dd62df5",
+    "cxsmpc/provenance.py": "1ae6c4e7eb0a2910465c285d74e58df7e34af42eff09e97cd8c9d816fd115c35",
+    "cxsmpc/terminal.py": "fdc97b18643b3ec1922d6927a4ae4381c2e3d724cab04c10459552938db2e223",
+    "scripts/exp002_mechanism.py": "6b0a4934876c6670e277afcb97c8fe653d1e82eda52c7fa52728fe3a5719f87f"
+  },
+  "config": {
+    "shift_fallback": "if predict-init solve is not verified, apply the shifted previous plan (Theorem rf candidate)",
+    "N": 15,
+    "T": 30,
+    "b": 12.0,
+    "h": [
+      1,
+      0,
+      0
+    ],
+    "p": 0.9,
+    "r": [
+      0,
+      4,
+      8,
+      12,
+      16,
+      20
+    ],
+    "s": [
+      0.5,
+      1.0,
+      1.5
+    ],
+    "terminal_margin": 0.02,
+    "terminal": "trace terminal (Assumption T, strict margin 2%) designed per method with its OWN design model; best over lam/H0 grid",
+    "runs": 2000,
+    "runs_nom": 500,
+    "seed": 9000,
+    "obj_scale": 0.001,
+    "fallback_max_iters": 20000,
+    "Q": "I3",
+    "R": "1",
+    "P": "terminal_weight(K) for each s"
+  },
+  "note": "Project is not a git repository; source SHA-256 recorded instead."
+}

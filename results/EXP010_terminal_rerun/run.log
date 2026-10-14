@@ -1,0 +1,9 @@
+CX-A [-0.1, 1.2] terminal ok {'max_k_violation': 0.001, 'max_k_cp95_upper': 0.0036076285698285315, 'cost_mean': 2508.509231370694}
+CX-A [-0.1, 1.3] terminal ok {'max_k_violation': 0.0005, 'max_k_cp95_upper': 0.0027826398346589465, 'cost_mean': 4585.788439565488}
+CX-A [-0.1, 1.4] terminal infeasible_at_x0 {}
+CX-A [0.0, 1.5] terminal infeasible_at_x0 {}
+CX-DF [-0.1, 1.2] terminal ok {'max_k_violation': 0.0015, 'max_k_cp95_upper': 0.004377320104529616, 'cost_mean': 2409.8410146554324}
+CX-DF [-0.1, 1.3] terminal ok {'max_k_violation': 0.0015, 'max_k_cp95_upper': 0.004377320104529616, 'cost_mean': 4464.176518237337}
+CX-DF [-0.1, 1.4] terminal infeasible_at_x0 {}
+CX-DF [0.0, 1.5] terminal infeasible_at_x0 {}
+ALL_DONE

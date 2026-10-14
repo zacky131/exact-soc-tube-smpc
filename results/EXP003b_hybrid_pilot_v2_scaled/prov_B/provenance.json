@@ -1,0 +1,94 @@
+{
+  "timestamp": "2026-10-02T23:10:30",
+  "command": "scripts/exp003b_hybrid.py B",
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "scipy": "1.15.2",
+  "cvxpy": "1.7.5",
+  "clarabel": "0.11.1",
+  "cpu": "AMD Ryzen 7 5800H with Radeon Graphics",
+  "os": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "git_commit": null,
+  "source_sha256": {
+    "cxsmpc/__init__.py": "8b1faa9a38862efcadf1a38672a84cd4fac3acbb32506080617005db5235df0a",
+    "cxsmpc/benchmarks.py": "1b581f6acffe310d89ab306ebeb2599366f3e2cf33fc70d2c344906cfee8462b",
+    "cxsmpc/closedloop.py": "9c48e5ab662aa99a7bad202d11c17913ae58b6251f35f334384ea2d01ce657f9",
+    "cxsmpc/kernels.py": "b718c9a98be73f108ba2ce1d11f3d70c9d374204d55736c8931b6d234d814b1e",
+    "cxsmpc/model.py": "903335a1a93c273988c1444ebd1b4433e9af5cf8f558e240c576795de8f43048",
+    "cxsmpc/ocp.py": "8d24b408a0c0bef81255649b741379e4a7cc012ab56794bb887082fe1dd62df5",
+    "cxsmpc/provenance.py": "1ae6c4e7eb0a2910465c285d74e58df7e34af42eff09e97cd8c9d816fd115c35",
+    "cxsmpc/terminal.py": "fdc97b18643b3ec1922d6927a4ae4381c2e3d724cab04c10459552938db2e223",
+    "scripts/exp003b_hybrid.py": "0cccea7c90a6f6a69630aab86af5ccf70ef494a335a3ec56d05c52a17cb9e31b"
+  },
+  "config": {
+    "obj_scale": 0.001,
+    "A": {
+      "N": 30,
+      "grid": [
+        -6.0,
+        -5.0,
+        -4.0,
+        -3.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0
+      ],
+      "Nc": [
+        3,
+        5,
+        10
+      ],
+      "Ne": [
+        3
+      ],
+      "eps": [
+        0.5,
+        0.9
+      ]
+    },
+    "B": {
+      "n": [
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "N": [
+        10,
+        20,
+        30
+      ],
+      "q": 2,
+      "systems": 5,
+      "states": 4,
+      "Nc": [
+        3,
+        5
+      ],
+      "Ne": [
+        3
+      ],
+      "eps": 0.5,
+      "p": 0.9,
+      "n_state_cons": 2,
+      "input_bound": 2.0,
+      "x0_norm": 0.3,
+      "seed": 3000
+    },
+    "fallback_max_iters": 50000,
+    "verify_tol": 1e-06,
+    "solver": "CLARABEL"
+  },
+  "note": "Project is not a git repository; source SHA-256 recorded instead."
+}

@@ -1,0 +1,9 @@
+{'eps': 0.5, 'x0': [-0.1, 1.2], 'runs': 2000, 'max_k_violation_rate': 0.001, 'max_k_cp95_upper': 0.0036076285698285315, 'argmax_k': 22, 'cost_mean': 717.3690140967103, 'cost_std': 222.43517200674535, 'first500_cost_mean': 721.5713942110401, 'logs': {'init_reset': 44762, 'init_predict': 35238, 'infeasible': 0, 'unresolved': 0, 'used_shift': 0}}
+{'eps': 0.5, 'x0': [-0.1, 1.3], 'runs': 2000, 'max_k_violation_rate': 0.001, 'max_k_cp95_upper': 0.0036076285698285315, 'argmax_k': 17, 'cost_mean': 2892.984214478016, 'cost_std': 1238.168003640049, 'first500_cost_mean': 2808.798301983901, 'logs': {'init_reset': 44699, 'init_predict': 35301, 'infeasible': 0, 'unresolved': 4, 'used_shift': 4}}
+{'eps': 0.5, 'x0': [-0.1, 1.4], 'infeasible_at_x0': True, 'k0_class': 'unresolved'}
+{'eps': 0.5, 'x0': [0.0, 1.5], 'runs': 2000, 'max_k_violation_rate': 0.0015, 'max_k_cp95_upper': 0.004377320104529616, 'argmax_k': 10, 'cost_mean': 16363.122169270317, 'cost_std': 2854.2924822463824, 'first500_cost_mean': 16328.874432781888, 'logs': {'init_reset': 48201, 'init_predict': 31799, 'infeasible': 0, 'unresolved': 31, 'used_shift': 31}}
+{'eps': 0.9, 'x0': [-0.1, 1.2], 'infeasible_at_x0': True, 'k0_class': 'certified_infeasible'}
+{'eps': 0.9, 'x0': [-0.1, 1.3], 'infeasible_at_x0': True, 'k0_class': 'certified_infeasible'}
+{'eps': 0.9, 'x0': [-0.1, 1.4], 'infeasible_at_x0': True, 'k0_class': 'certified_infeasible'}
+{'eps': 0.9, 'x0': [0.0, 1.5], 'infeasible_at_x0': True, 'k0_class': 'certified_infeasible'}
+ALL_DONE

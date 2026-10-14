@@ -1,0 +1,78 @@
+{
+  "timestamp": "2026-10-02T19:50:10",
+  "command": "scripts/exp003_equivalence_scaling.py part2",
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "scipy": "1.15.2",
+  "cvxpy": "1.7.5",
+  "clarabel": "0.11.1",
+  "cpu": "AMD Ryzen 7 5800H with Radeon Graphics",
+  "os": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "git_commit": null,
+  "source_sha256": {
+    "cxsmpc/__init__.py": "8b1faa9a38862efcadf1a38672a84cd4fac3acbb32506080617005db5235df0a",
+    "cxsmpc/benchmarks.py": "269c11631adbc0328bfa696e33bee1f399e4072de401c604f272b4a1fc62f654",
+    "cxsmpc/kernels.py": "80f761bc9ff0da7293977c7a4cd1bbb68132f768c52fc8ca451ec6c1dbe59722",
+    "cxsmpc/model.py": "acdf10ea2098592e8e1eceaedd078a0c6a08ec32284cbfc402377d5647394bd3",
+    "cxsmpc/ocp.py": "dbcd657996aa3a07d4b4e56b4175b296470503379d9a8b8fb4ad4c1144640d12",
+    "cxsmpc/provenance.py": "1ae6c4e7eb0a2910465c285d74e58df7e34af42eff09e97cd8c9d816fd115c35",
+    "scripts/exp003_equivalence_scaling.py": "d8211af2872e15a8c4a82883ead276a5b44e036ced4e0893153b92ec581d340c"
+  },
+  "config": {
+    "part1": {
+      "N": 10,
+      "grid": [
+        -6.0,
+        -5.0,
+        -4.0,
+        -3.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0
+      ],
+      "eps": [
+        0.1,
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ]
+    },
+    "part2": {
+      "n": [
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "N": [
+        10,
+        20,
+        30
+      ],
+      "q": 2,
+      "systems": 5,
+      "states": 4,
+      "eps": 0.5,
+      "p": 0.9,
+      "n_state_cons": 2,
+      "input_bound": 2.0,
+      "x0_norm": 0.3,
+      "seed": 3000
+    },
+    "solver": "CLARABEL",
+    "tol_cost": 1e-05
+  },
+  "note": "Project is not a git repository; source SHA-256 recorded instead."
+}

@@ -1,0 +1,50 @@
+{
+  "label": "PILOT \u2014 reduced sample sizes; not the full E3",
+  "part1": {
+    "grid_points": 289,
+    "solver_fallbacks_to_SCS": 490,
+    "feasible_area_fraction": {
+      "CX": 0.5709342560553633,
+      "FS(eps=0.1)": 0.5570934256055363,
+      "FS(eps=0.3)": 0.5467128027681661,
+      "FS(eps=0.5)": 0.5501730103806228,
+      "FS(eps=0.7)": 0.5467128027681661,
+      "FS(eps=0.9)": 0.5605536332179931
+    },
+    "containment_violations_feasibility": 16,
+    "containment_violations_cost": 10,
+    "optimal_inaccurate_count": 59,
+    "cost_ratio_CX_over_FS_on_joint_feasible": {
+      "FS(eps=0.1)": {
+        "n": 157,
+        "median": 0.9848004469333042,
+        "min": 1.1088388317066841e-14,
+        "max": 1.426857286051499
+      },
+      "FS(eps=0.3)": {
+        "n": 155,
+        "median": 0.9996336184218267,
+        "min": 1.5250570857200376e-14,
+        "max": 1.9129842814391789
+      },
+      "FS(eps=0.5)": {
+        "n": 155,
+        "median": 0.9999999966627318,
+        "min": 3.01006555554349e-14,
+        "max": 1.7484148546486948
+      },
+      "FS(eps=0.7)": {
+        "n": 157,
+        "median": 0.9999999968250378,
+        "min": 6.769399789338185e-14,
+        "max": 0.999999999947065
+      },
+      "FS(eps=0.9)": {
+        "n": 158,
+        "median": 0.9999999969740025,
+        "min": 6.791376931230841e-14,
+        "max": 1.0755836504676908
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "timestamp": "2026-10-02T18:11:46",
+  "command": "scripts/exp003_equivalence_scaling.py",
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "scipy": "1.15.2",
+  "cvxpy": "1.7.5",
+  "clarabel": "0.11.1",
+  "cpu": "AMD Ryzen 7 5800H with Radeon Graphics",
+  "os": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "git_commit": null,
+  "source_sha256": {
+    "cxsmpc/__init__.py": "8b1faa9a38862efcadf1a38672a84cd4fac3acbb32506080617005db5235df0a",
+    "cxsmpc/benchmarks.py": "269c11631adbc0328bfa696e33bee1f399e4072de401c604f272b4a1fc62f654",
+    "cxsmpc/kernels.py": "80f761bc9ff0da7293977c7a4cd1bbb68132f768c52fc8ca451ec6c1dbe59722",
+    "cxsmpc/model.py": "acdf10ea2098592e8e1eceaedd078a0c6a08ec32284cbfc402377d5647394bd3",
+    "cxsmpc/ocp.py": "7479a316491767ca6cb52025e80dc7cf61ef57492fe3cc430e80520dbaf1a7da",
+    "cxsmpc/provenance.py": "1ae6c4e7eb0a2910465c285d74e58df7e34af42eff09e97cd8c9d816fd115c35",
+    "scripts/exp003_equivalence_scaling.py": "20eede0df43e3c3240b74182ef21ae4f17fe4f6194abf60d7c2ca2e042ec493e"
+  },
+  "config": {
+    "part1": {
+      "N": 10,
+      "grid": [
+        -6.0,
+        -5.5,
+        -5.0,
+        -4.5,
+        -4.0,
+        -3.5,
+        -3.0,
+        -2.5,
+        -2.0,
+        -1.5,
+        -1.0,
+        -0.5,
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5,
+        3.0,
+        3.5,
+        4.0,
+        4.5,
+        5.0,
+        5.5,
+        6.0,
+        6.5,
+        7.0,
+        7.5,
+        8.0,
+        8.5,
+        9.0,
+        9.5,
+        10.0
+      ],
+      "eps": [
+        0.1,
+        0.3,
+        0.5,
+        0.7,
+        0.9
+      ]
+    },
+    "part2": {
+      "n": [
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "N": [
+        10,
+        20,
+        30
+      ],
+      "q": 2,
+      "systems": 10,
+      "states": 5,
+      "eps": 0.5,
+      "p": 0.9,
+      "n_state_cons": 2,
+      "input_bound": 2.0,
+      "x0_norm": 0.3,
+      "seed": 3000
+    },
+    "solver": "CLARABEL",
+    "tol_cost": 1e-05
+  },
+  "note": "Project is not a git repository; source SHA-256 recorded instead."
+}

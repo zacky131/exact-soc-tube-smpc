@@ -1,0 +1,674 @@
+{
+ "rows": [
+  {
+   "row": "FS-DF",
+   "x0": [
+    -0.1,
+    1.4
+   ],
+   "status": "not_initialised",
+   "k0_class": "unresolved"
+  },
+  {
+   "row": "CX-A-terminal-N30-Nc5",
+   "x0": [
+    -0.1,
+    1.3
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.004,
+   "argmax_k": 12,
+   "max_k_cp95_upper": 0.007866303828537383,
+   "cost_mean": 2307.192982231034,
+   "cost_std": 3.643126886056225,
+   "logs": {
+    "init_reset": 2000,
+    "init_predict": 78000,
+    "infeasible": 0,
+    "unresolved": 0,
+    "used_shift": 0
+   }
+  },
+  {
+   "row": "CX-A-terminal-N30-Nc5",
+   "x0": [
+    -0.1,
+    1.2
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.0025,
+   "argmax_k": 10,
+   "max_k_cp95_upper": 0.005824445334518517,
+   "cost_mean": 1153.6870314012756,
+   "cost_std": 4.505340863634237,
+   "logs": {
+    "init_reset": 2000,
+    "init_predict": 78000,
+    "infeasible": 0,
+    "unresolved": 0,
+    "used_shift": 0
+   }
+  },
+  {
+   "row": "CX-A-terminal-N30-Nc5",
+   "x0": [
+    0.0,
+    1.5
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.007,
+   "argmax_k": 11,
+   "max_k_cp95_upper": 0.01171694577053208,
+   "cost_mean": 6233.952360009048,
+   "cost_std": 2.953040782768948,
+   "logs": {
+    "init_reset": 2000,
+    "init_predict": 78000,
+    "infeasible": 0,
+    "unresolved": 0,
+    "used_shift": 0
+   }
+  },
+  {
+   "row": "CX-A-terminal-N30-Nc5",
+   "x0": [
+    -0.1,
+    1.4
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.0055,
+   "argmax_k": 12,
+   "max_k_cp95_upper": 0.009819662989899393,
+   "cost_mean": 4159.962295429375,
+   "cost_std": 2.961973115642321,
+   "logs": {
+    "init_reset": 2000,
+    "init_predict": 78000,
+    "infeasible": 0,
+    "unresolved": 0,
+    "used_shift": 0
+   }
+  },
+  {
+   "row": "CX-DF-terminal-N30-Nc5",
+   "x0": [
+    -0.1,
+    1.2
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.0005,
+   "argmax_k": 9,
+   "max_k_cp95_upper": 0.0027826398346589465,
+   "cost_mean": 1128.0165648440252,
+   "cost_std": 58.82226738291664,
+   "logs": {
+    "init_reset": 79999,
+    "init_predict": 1,
+    "infeasible": 0,
+    "unresolved": 0,
+    "used_shift": 0
+   }
+  },
+  {
+   "row": "M24-IF",
+   "x0": [
+    -0.1,
+    1.2
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.0085,
+   "argmax_k": 22,
+   "max_k_cp95_upper": 0.013574546199731806,
+   "cost_mean": 178.80952993012156,
+   "cost_std": 4.180519631539204,
+   "logs": {
+    "infeasible": 0,
+    "unresolved": 0
+   }
+  },
+  {
+   "row": "M24-IF",
+   "x0": [
+    -0.1,
+    1.3
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.0105,
+   "argmax_k": 18,
+   "max_k_cp95_upper": 0.01600579487869697,
+   "cost_mean": 444.491730074321,
+   "cost_std": 2.67087665877432,
+   "logs": {
+    "infeasible": 0,
+    "unresolved": 0
+   }
+  },
+  {
+   "row": "CX-DF-terminal-N30-Nc5",
+   "x0": [
+    -0.1,
+    1.3
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.0005,
+   "argmax_k": 9,
+   "max_k_cp95_upper": 0.0027826398346589465,
+   "cost_mean": 2296.0334191847046,
+   "cost_std": 23.570640665259194,
+   "logs": {
+    "init_reset": 79997,
+    "init_predict": 3,
+    "infeasible": 0,
+    "unresolved": 0,
+    "used_shift": 0
+   }
+  },
+  {
+   "row": "CX-DF-terminal-N30-Nc5",
+   "x0": [
+    -0.1,
+    1.4
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.002,
+   "argmax_k": 11,
+   "max_k_cp95_upper": 0.005112808605346209,
+   "cost_mean": 4145.765656056652,
+   "cost_std": 41.80288035283739,
+   "logs": {
+    "init_reset": 79992,
+    "init_predict": 8,
+    "infeasible": 0,
+    "unresolved": 0,
+    "used_shift": 0
+   }
+  },
+  {
+   "row": "M24-IF",
+   "x0": [
+    -0.1,
+    1.4
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.0175,
+   "argmax_k": 13,
+   "max_k_cp95_upper": 0.02425488947719145,
+   "cost_mean": 1051.9322771448794,
+   "cost_std": 2.0501670443117095,
+   "logs": {
+    "infeasible": 0,
+    "unresolved": 0
+   }
+  },
+  {
+   "row": "CX-DF-terminal-N30-Nc5",
+   "x0": [
+    0.0,
+    1.5
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.001,
+   "argmax_k": 10,
+   "max_k_cp95_upper": 0.0036076285698285315,
+   "cost_mean": 6189.944801027636,
+   "cost_std": 97.83793528187014,
+   "logs": {
+    "init_reset": 79995,
+    "init_predict": 5,
+    "infeasible": 0,
+    "unresolved": 0,
+    "used_shift": 0
+   }
+  },
+  {
+   "row": "M24-IF",
+   "x0": [
+    0.0,
+    1.5
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.0235,
+   "argmax_k": 11,
+   "max_k_cp95_upper": 0.03112855081898538,
+   "cost_mean": 2231.6403112120506,
+   "cost_std": 2.1025380278235883,
+   "logs": {
+    "infeasible": 0,
+    "unresolved": 0
+   }
+  },
+  {
+   "row": "CX-A",
+   "x0": [
+    -0.1,
+    1.2
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.0085,
+   "argmax_k": 22,
+   "max_k_cp95_upper": 0.013574546199731806,
+   "cost_mean": 178.8095276198936,
+   "cost_std": 4.180526042079493,
+   "logs": {
+    "init_reset": 2000,
+    "init_predict": 78000,
+    "infeasible": 0,
+    "unresolved": 0,
+    "used_shift": 0
+   }
+  },
+  {
+   "row": "CX-A",
+   "x0": [
+    -0.1,
+    1.3
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.0105,
+   "argmax_k": 18,
+   "max_k_cp95_upper": 0.01600579487869697,
+   "cost_mean": 444.49173017058695,
+   "cost_std": 2.670876880761944,
+   "logs": {
+    "init_reset": 2000,
+    "init_predict": 78000,
+    "infeasible": 0,
+    "unresolved": 0,
+    "used_shift": 0
+   }
+  },
+  {
+   "row": "CX-A",
+   "x0": [
+    -0.1,
+    1.4
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.0175,
+   "argmax_k": 13,
+   "max_k_cp95_upper": 0.02425488947719145,
+   "cost_mean": 1051.9322770127749,
+   "cost_std": 2.050167493894783,
+   "logs": {
+    "init_reset": 2000,
+    "init_predict": 78000,
+    "infeasible": 0,
+    "unresolved": 0,
+    "used_shift": 0
+   }
+  },
+  {
+   "row": "CX-A",
+   "x0": [
+    0.0,
+    1.5
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.0235,
+   "argmax_k": 11,
+   "max_k_cp95_upper": 0.03112855081898538,
+   "cost_mean": 2231.6403109759576,
+   "cost_std": 2.1025384530084885,
+   "logs": {
+    "init_reset": 2000,
+    "init_predict": 78000,
+    "infeasible": 0,
+    "unresolved": 0,
+    "used_shift": 0
+   }
+  },
+  {
+   "row": "CX-DF",
+   "x0": [
+    -0.1,
+    1.2
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.001,
+   "argmax_k": 15,
+   "max_k_cp95_upper": 0.0036076285698285315,
+   "cost_mean": 132.66095079228646,
+   "cost_std": 43.59102942213207,
+   "logs": {
+    "init_reset": 79991,
+    "init_predict": 9,
+    "infeasible": 0,
+    "unresolved": 0,
+    "used_shift": 0
+   }
+  },
+  {
+   "row": "NOM",
+   "x0": [
+    -0.1,
+    1.2
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.3925,
+   "argmax_k": 8,
+   "max_k_cp95_upper": 0.41429548570582597,
+   "cost_mean": 88.5938251169299,
+   "cost_std": 56.5640000314564,
+   "logs": {
+    "infeasible": 0
+   }
+  },
+  {
+   "row": "NOM",
+   "x0": [
+    -0.1,
+    1.3
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.46,
+   "argmax_k": 8,
+   "max_k_cp95_upper": 0.4821380170700587,
+   "cost_mean": 155.48409250599533,
+   "cost_std": 355.0369301020467,
+   "logs": {
+    "infeasible": 0
+   }
+  },
+  {
+   "row": "CX-DF",
+   "x0": [
+    -0.1,
+    1.3
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.002,
+   "argmax_k": 18,
+   "max_k_cp95_upper": 0.005112808605346209,
+   "cost_mean": 370.3043789323829,
+   "cost_std": 52.97724398200228,
+   "logs": {
+    "init_reset": 79960,
+    "init_predict": 40,
+    "infeasible": 0,
+    "unresolved": 0,
+    "used_shift": 0
+   }
+  },
+  {
+   "row": "CX-DF",
+   "x0": [
+    -0.1,
+    1.4
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.002,
+   "argmax_k": 16,
+   "max_k_cp95_upper": 0.005112808605346209,
+   "cost_mean": 1020.3387493573206,
+   "cost_std": 48.736214446465674,
+   "logs": {
+    "init_reset": 79923,
+    "init_predict": 77,
+    "infeasible": 0,
+    "unresolved": 0,
+    "used_shift": 0
+   }
+  },
+  {
+   "row": "CX-DF",
+   "x0": [
+    0.0,
+    1.5
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.0035,
+   "argmax_k": 10,
+   "max_k_cp95_upper": 0.007197961714658002,
+   "cost_mean": 2192.8738285290415,
+   "cost_std": 59.20312089801757,
+   "logs": {
+    "init_reset": 79911,
+    "init_predict": 89,
+    "infeasible": 0,
+    "unresolved": 0,
+    "used_shift": 0
+   }
+  },
+  {
+   "row": "CX-A-terminal-N10",
+   "x0": [
+    -0.1,
+    1.4
+   ],
+   "status": "infeasible_at_x0"
+  },
+  {
+   "row": "CX-A-terminal-N10",
+   "x0": [
+    0.0,
+    1.5
+   ],
+   "status": "infeasible_at_x0"
+  },
+  {
+   "row": "NOM",
+   "x0": [
+    -0.1,
+    1.4
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.4885,
+   "argmax_k": 11,
+   "max_k_cp95_upper": 0.5106605368301083,
+   "cost_mean": 782.5653269748103,
+   "cost_std": 7747.091626656928,
+   "logs": {
+    "infeasible": 0
+   }
+  },
+  {
+   "row": "NOM",
+   "x0": [
+    0.0,
+    1.5
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.4785,
+   "argmax_k": 11,
+   "max_k_cp95_upper": 0.5006607628045723,
+   "cost_mean": 2886.543987774897,
+   "cost_std": 18811.710005326397,
+   "logs": {
+    "infeasible": 0
+   }
+  },
+  {
+   "row": "CX-DF-terminal-N10",
+   "x0": [
+    -0.1,
+    1.4
+   ],
+   "status": "infeasible_at_x0"
+  },
+  {
+   "row": "CX-DF-terminal-N10",
+   "x0": [
+    0.0,
+    1.5
+   ],
+   "status": "infeasible_at_x0"
+  },
+  {
+   "row": "CX-A-terminal-N10",
+   "x0": [
+    -0.1,
+    1.2
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.001,
+   "argmax_k": 4,
+   "max_k_cp95_upper": 0.0036076285698285315,
+   "cost_mean": 2508.509231370694,
+   "cost_std": 5.0659936489349136,
+   "logs": {
+    "init_reset": 2000,
+    "init_predict": 78000,
+    "infeasible": 0,
+    "unresolved": 0,
+    "used_shift": 0
+   }
+  },
+  {
+   "row": "CX-A-terminal-N10",
+   "x0": [
+    -0.1,
+    1.3
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.0005,
+   "argmax_k": 3,
+   "max_k_cp95_upper": 0.0027826398346589465,
+   "cost_mean": 4585.788439565488,
+   "cost_std": 3.701874343653424,
+   "logs": {
+    "init_reset": 2000,
+    "init_predict": 78000,
+    "infeasible": 0,
+    "unresolved": 0,
+    "used_shift": 0
+   }
+  },
+  {
+   "row": "CX-DF-terminal-N10",
+   "x0": [
+    -0.1,
+    1.2
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.0015,
+   "argmax_k": 6,
+   "max_k_cp95_upper": 0.004377320104529616,
+   "cost_mean": 2409.8410146554324,
+   "cost_std": 189.54257856400307,
+   "logs": {
+    "init_reset": 79997,
+    "init_predict": 3,
+    "infeasible": 0,
+    "unresolved": 0,
+    "used_shift": 0
+   }
+  },
+  {
+   "row": "CX-DF-terminal-N10",
+   "x0": [
+    -0.1,
+    1.3
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.0015,
+   "argmax_k": 6,
+   "max_k_cp95_upper": 0.004377320104529616,
+   "cost_mean": 4464.176518237337,
+   "cost_std": 90.47124589337501,
+   "logs": {
+    "init_reset": 79994,
+    "init_predict": 6,
+    "infeasible": 0,
+    "unresolved": 0,
+    "used_shift": 0
+   }
+  },
+  {
+   "row": "FS-DF",
+   "x0": [
+    0.0,
+    1.5
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.0015,
+   "argmax_k": 10,
+   "max_k_cp95_upper": 0.004377320104529616,
+   "cost_mean": 16363.122169270317,
+   "cost_std": 2854.2924822463824,
+   "logs": {
+    "init_reset": 48201,
+    "init_predict": 31799,
+    "infeasible": 0,
+    "unresolved": 31,
+    "used_shift": 31
+   }
+  },
+  {
+   "row": "FS-DF",
+   "x0": [
+    -0.1,
+    1.2
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.001,
+   "argmax_k": 22,
+   "max_k_cp95_upper": 0.0036076285698285315,
+   "cost_mean": 717.3690140967103,
+   "cost_std": 222.43517200674535,
+   "logs": {
+    "init_reset": 44762,
+    "init_predict": 35238,
+    "infeasible": 0,
+    "unresolved": 0,
+    "used_shift": 0
+   }
+  },
+  {
+   "row": "FS-DF",
+   "x0": [
+    -0.1,
+    1.3
+   ],
+   "status": "ok",
+   "runs": 2000,
+   "max_k_violation": 0.001,
+   "argmax_k": 17,
+   "max_k_cp95_upper": 0.0036076285698285315,
+   "cost_mean": 2892.984214478016,
+   "cost_std": 1238.168003640049,
+   "logs": {
+    "init_reset": 44699,
+    "init_predict": 35301,
+    "infeasible": 0,
+    "unresolved": 4,
+    "used_shift": 4
+   }
+  }
+ ],
+ "m24_vs_cxa_max_abs_cost_diff": {
+  "[-0.1, 1.2]": 0.004379959670899325,
+  "[-0.1, 1.3]": 9.454882547288435e-05,
+  "[-0.1, 1.4]": 2.520851921872236e-05,
+  "[0.0, 1.5]": 2.086397034872789e-05
+ }
+}

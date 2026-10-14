@@ -1,0 +1,77 @@
+{
+ "grid_points": 289,
+ "soc_verified": 165,
+ "eps": {
+  "0.1": {
+   "t0_exact": {
+    "verified": 144,
+    "infeasible": 135,
+    "unresolved": 10
+   },
+   "literal": {
+    "verified": 144,
+    "infeasible": 137,
+    "unresolved": 8
+   },
+   "t0_feasible_where_soc_certified_infeasible": 0,
+   "soc_only_vs_t0": 21
+  },
+  "0.3": {
+   "t0_exact": {
+    "verified": 149,
+    "infeasible": 126,
+    "unresolved": 14
+   },
+   "literal": {
+    "verified": 145,
+    "infeasible": 137,
+    "unresolved": 7
+   },
+   "t0_feasible_where_soc_certified_infeasible": 0,
+   "soc_only_vs_t0": 16
+  },
+  "0.5": {
+   "t0_exact": {
+    "verified": 150,
+    "infeasible": 127,
+    "unresolved": 12
+   },
+   "literal": {
+    "verified": 149,
+    "infeasible": 132,
+    "unresolved": 8
+   },
+   "t0_feasible_where_soc_certified_infeasible": 0,
+   "soc_only_vs_t0": 15
+  },
+  "0.7": {
+   "t0_exact": {
+    "verified": 154,
+    "infeasible": 129,
+    "unresolved": 6
+   },
+   "literal": {
+    "verified": 150,
+    "infeasible": 135,
+    "unresolved": 4
+   },
+   "t0_feasible_where_soc_certified_infeasible": 0,
+   "soc_only_vs_t0": 11
+  },
+  "0.9": {
+   "t0_exact": {
+    "verified": 155,
+    "infeasible": 127,
+    "unresolved": 7
+   },
+   "literal": {
+    "verified": 151,
+    "infeasible": 132,
+    "unresolved": 6
+   },
+   "t0_feasible_where_soc_certified_infeasible": 0,
+   "soc_only_vs_t0": 10
+  }
+ }
+}
+ALL_DONE

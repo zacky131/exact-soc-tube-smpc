@@ -1,0 +1,9 @@
+CX-A [-0.1, 1.2] terminal ok {'max_k_violation': 0.005, 'max_k_cp95_upper': 0.009175895070019778, 'cost_mean': 153.51738477115478}
+CX-A [-0.1, 1.3] terminal ok {'max_k_violation': 0.009, 'max_k_cp95_upper': 0.014186714471514504, 'cost_mean': 404.8747851495975}
+CX-A [-0.1, 1.4] terminal ok {'max_k_violation': 0.0175, 'max_k_cp95_upper': 0.02425488947719145, 'cost_mean': 1051.4650937424678}
+CX-A [0.0, 1.5] terminal ok {'max_k_violation': 0.0235, 'max_k_cp95_upper': 0.03112855081898538, 'cost_mean': 2231.6352576585655}
+CX-A [-0.1, 1.2] no-terminal ok {'max_k_violation': 0.005, 'max_k_cp95_upper': 0.009175895070019778, 'cost_mean': 153.50317362980562}
+CX-A [-0.1, 1.3] no-terminal ok {'max_k_violation': 0.0095, 'max_k_cp95_upper': 0.01479583217228858, 'cost_mean': 404.873536681738}
+CX-A [-0.1, 1.4] no-terminal ok {'max_k_violation': 0.0175, 'max_k_cp95_upper': 0.02425488947719145, 'cost_mean': 1051.465093060395}
+CX-A [0.0, 1.5] no-terminal ok {'max_k_violation': 0.0235, 'max_k_cp95_upper': 0.03112855081898538, 'cost_mean': 2231.6352570604345}
+ALL_DONE

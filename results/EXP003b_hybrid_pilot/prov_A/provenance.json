@@ -1,0 +1,91 @@
+{
+  "timestamp": "2026-10-02T20:10:22",
+  "command": "scripts/exp003b_hybrid.py A",
+  "python": "3.10.12",
+  "numpy": "2.2.6",
+  "scipy": "1.15.2",
+  "cvxpy": "1.7.5",
+  "clarabel": "0.11.1",
+  "cpu": "AMD Ryzen 7 5800H with Radeon Graphics",
+  "os": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "git_commit": null,
+  "source_sha256": {
+    "cxsmpc/__init__.py": "8b1faa9a38862efcadf1a38672a84cd4fac3acbb32506080617005db5235df0a",
+    "cxsmpc/benchmarks.py": "269c11631adbc0328bfa696e33bee1f399e4072de401c604f272b4a1fc62f654",
+    "cxsmpc/kernels.py": "b718c9a98be73f108ba2ce1d11f3d70c9d374204d55736c8931b6d234d814b1e",
+    "cxsmpc/model.py": "acdf10ea2098592e8e1eceaedd078a0c6a08ec32284cbfc402377d5647394bd3",
+    "cxsmpc/ocp.py": "2c17f68a6d1cf0cd44861c524d06a8128e0688ee1edd0b6ea9a8aa0394142bc0",
+    "cxsmpc/provenance.py": "1ae6c4e7eb0a2910465c285d74e58df7e34af42eff09e97cd8c9d816fd115c35",
+    "scripts/exp003b_hybrid.py": "78dd4515511a30ff6e59be812b3ee40fef9992ac04320ef131337a92658d620e"
+  },
+  "config": {
+    "A": {
+      "N": 30,
+      "grid": [
+        -6.0,
+        -5.0,
+        -4.0,
+        -3.0,
+        -2.0,
+        -1.0,
+        0.0,
+        1.0,
+        2.0,
+        3.0,
+        4.0,
+        5.0,
+        6.0,
+        7.0,
+        8.0,
+        9.0,
+        10.0
+      ],
+      "Nc": [
+        3,
+        5,
+        10
+      ],
+      "Ne": [
+        3
+      ],
+      "eps": [
+        0.5,
+        0.9
+      ]
+    },
+    "B": {
+      "n": [
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "N": [
+        10,
+        20,
+        30
+      ],
+      "q": 2,
+      "systems": 5,
+      "states": 4,
+      "Nc": [
+        3,
+        5
+      ],
+      "Ne": [
+        3
+      ],
+      "eps": 0.5,
+      "p": 0.9,
+      "n_state_cons": 2,
+      "input_bound": 2.0,
+      "x0_norm": 0.3,
+      "seed": 3000
+    },
+    "fallback_max_iters": 50000,
+    "verify_tol": 1e-06,
+    "solver": "CLARABEL"
+  },
+  "note": "Project is not a git repository; source SHA-256 recorded instead."
+}
