@@ -53,3 +53,6 @@ relative. Terminal ingredients: `cxsmpc/terminal.py` with a 2 % margin and the (
 
 ## Citation
 Please cite the paper (details will be added after publication).
+
+## License
+MIT License, see [LICENSE](LICENSE).
