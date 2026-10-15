@@ -14,9 +14,8 @@ def load(p):
 
 ev = {}
 ev["E000"] = dict(type="analytical", evidence_level="L0",
-                  source=dict(file="theory/cx_smpc_theory.pdf", commit=None), experiment=dict(id="THEORY_P1"),
-                  metrics=dict(proved_results="kernel lemma, exact SOC thm, expected cost, containment vs FS16, recursive feasibility, Thm A, Thm C, Cor rfC, Thm perfA, Thm perfC",
-                               independent_review="pending (theory/PROOF_REVIEW_CHECKLIST.md)"),
+                  source=dict(file="paper (proofs in the manuscript; not part of this repository)", commit=None), experiment=dict(id="THEORY"),
+                  metrics=dict(proved_results="Lemmas 1-2, Theorems 1-3 and Propositions 1-4 of the paper"),
                   scope=dict(environment="analytical"), verified=False)
 s0 = load("results/EXP000/summary.json")
 if s0:
@@ -114,7 +113,7 @@ if s7:
                       protocol=dict(simulator="vectorized closed-loop MC (det. nominal) + per-run (A3)", controller="CX-A variants: exact/nominal cost, Cantelli/Gaussian kappa, K choice; A/DF/reset-only",
                                     scenario="benchmarks A (x1<=12) and D, trace terminal; tails Laplace/t5/t3; noise scale x1.5-3"),
                       metrics=m, scope=dict(environment="numerical simulation", trials=2000, label="PILOT"), verified=False)
-s8 = load("results/EXP008_quadrotor_pilot/summary.json")
+s8 = load("extras/results/EXP008_quadrotor_pilot/summary.json")
 if s8:
     m = {}
     for r in s8["results"]:
@@ -122,7 +121,7 @@ if s8:
         m[f"{meth}|z0={z0}|{nz}"] = ({k: r[k] for k in ("ceiling_max_k", "ceiling_cp95_upper", "input_viol_max_k", "saturation_frac", "cost_mean", "final_abs_z_mean")}
                                      if r["status"] == "ok" else r["status"])
     ev["E008"] = dict(type="simulation_result", evidence_level="L1",
-                      source=dict(file="results/EXP008_quadrotor_pilot/summary.json", commit=None), experiment=dict(id="EXP008"),
+                      source=dict(file="extras/results/EXP008_quadrotor_pilot/summary.json", commit=None), experiment=dict(id="EXP008"),
                       protocol=dict(simulator="vectorized linear closed-loop MC with physical thrust saturation", controller="CX-A, CA-A, FS-A, NOM",
                                     scenario="ILLUSTRATIVE quadrotor altitude (mass/thrust from NanoBench; drag and noise levels ASSUMED), climbs 0.5-3 m"),
                       metrics=m, scope=dict(environment="numerical simulation (L1), not physics engine, not flight", trials=2000, label="PILOT"), verified=False)
@@ -154,11 +153,11 @@ if s10p.exists():
                                     controller="CX-A, CX-DF WITH trace-terminal ingredients (Assumption 3)", scenario="4 initial states of Table 1, N=10, T=40"),
                       metrics=m10, scope=dict(environment="numerical simulation (L1)", trials=d10["config"]["runs"],
                                               label="REVISION run, added after the 2026-10-03 freeze"), verified=False)
-s11p = ROOT / "results/EXP011_problem_sizes/sizes.json"
+s11p = ROOT / "extras/results/EXP011_problem_sizes/sizes.json"
 if s11p.exists():
     d11 = json.load(open(s11p))
     ev["E011"] = dict(type="structural_measurement", evidence_level="L0",
-                      source=dict(file="results/EXP011_problem_sizes/sizes.json", commit=None), experiment=dict(id="EXP011"),
+                      source=dict(file="extras/results/EXP011_problem_sizes/sizes.json", commit=None), experiment=dict(id="EXP011"),
                       protocol=dict(simulator="CVXPY get_problem_data (Clarabel conic form)", controller="CX, DM3, DM5, FS0.5",
                                     scenario="EXP003b timing grid, one random system per (n, N)"),
                       metrics={f"n={r['n']}|N={r['N']}|{r['method']}": {k: r[k] for k in ("variables", "rows", "nnz", "n_soc", "n_psd", "max_psd")} for r in d11["rows"]},
@@ -280,6 +279,43 @@ if _p23.exists():
                       protocol=dict(simulator="deterministic terminal design (cxsmpc/terminal.py)", controller="selected (lambda, H0, alpha, gamma_bar) per design",
                                     scenario="all designs used in the paper"),
                       metrics=json.load(open(_p23)), scope=dict(environment="offline design", trials=1, label="REVISION-v7 appendix table, added after the freeze"), verified=False)
+_p24 = ROOT / "results/EXP024_table2_n30/summary.json"
+if _p24.exists():
+    _d24 = json.load(open(_p24))
+    ev["E024"] = dict(type="simulation_result", evidence_level="L1",
+                      source=dict(file="results/EXP024_table2_n30/summary.json", commit=None), experiment=dict(id="EXP024"),
+                      protocol=dict(simulator="closed-loop MC, benchmark D, x0=(-0.1,1.2), Table 1 seeds, T=40, exp024_table2_n30.py",
+                                    controller="Algorithm 1 (CX-A), terminal ingredients, N=30, Cantelli kappa=3 and normal quantile kappa=1.28",
+                                    scenario="theta Gaussian / Laplace / t5 / t3 (unit variance)"),
+                      metrics=dict(cells={f"{c['kappa']}|{c['tail']}": {k: c[k] for k in ("max_k_violation", "max_k_cp95_upper", "cost_mean", "cost_std", "argmax_k", "logs", "activity", "terminal")}
+                                          for c in _d24["cells"] if c["status"] == "ok"}),
+                      scope=dict(environment="numerical simulation (L1)", trials=2000, label="REVISION-v8 Table 2 run (N=30), added after the freeze"), verified=False)
+_p25 = ROOT / "results/EXP025_terminal_activity_n30/summary.json"
+if _p25.exists():
+    _d25 = json.load(open(_p25))
+    ev["E025"] = dict(type="simulation_result", evidence_level="L1",
+                      source=dict(file="results/EXP025_terminal_activity_n30/summary.json", commit=None), experiment=dict(id="EXP025"),
+                      protocol=dict(simulator="closed-loop MC, benchmark D, Table 1 seeds, T=40, exp025_terminal_activity_n30.py",
+                                    controller="CX-A and CX-DF, N=30, with terminal ingredients (activity per step) and CX-DF without",
+                                    scenario="4 initial states of Table 1"),
+                      metrics=dict(cells={f"{c['method']}|x0={c['x0']}|{'terminal' if c['terminal'] else 'no-terminal'}":
+                                          {k: c[k] for k in ("max_k_violation", "max_k_cp95_upper", "cost_mean", "cost_std", "argmax_k", "logs",
+                                                              "activity", "zN_active_per_k", "trace_active_per_k") if k in c}
+                                          for c in _d25["cells"] if c["status"] == "ok"}),
+                      scope=dict(environment="numerical simulation (L1)", trials=2000, label="REVISION-v9 terminal activity run, added after the freeze"), verified=False)
 ledger = dict(project=dict(name="CX-SMPC multiplicative-noise SMPC", domain="control"), evidence=ev)
-(ROOT / "EVIDENCE_LEDGER.yaml").write_text("# Generated by scripts/build_ledger.py — do not edit values by hand.\n# FROZEN 2026-10-03 (ARIS Stage 16): no edits without a new audit record.\n# Audit 2026-10-03: E009 (EXP009 figure data, illustration only) appended after the freeze; E000-E008 unchanged.\n# Audit 2026-10-04: E010-E012 (revision-v1 runs) appended after the freeze; E000-E009 unchanged.\n# Audit 2026-10-05: E013-E014 (revision-v2 runs) appended after the freeze; E000-E012 unchanged.\n# Audit 2026-10-06: E015 (revision-v3 run) appended after the freeze; E000-E014 unchanged.\n# Audit 2026-10-06: E016-E017 (revision-v4 runs) appended after the freeze; E000-E015 unchanged.\n# Audit 2026-10-06: E018 (revision-v5 run) appended after the freeze; E000-E017 unchanged.\n# Audit 2026-10-06: E019-E020 (revision-v6 runs) appended after the freeze; E000-E018 unchanged.\n# Audit 2026-10-14: E021-E023 (revision-v7) appended after the freeze; E000-E020 unchanged.\n" + yaml.safe_dump(ledger, sort_keys=False, width=140))
+
+def _public(ev):
+    """Strip internal workflow fields (labels, verification flags, evidence levels); keep all data."""
+    for rec in ev.values():
+        rec.pop("evidence_level", None); rec.pop("verified", None)
+        rec.get("scope", {}).pop("label", None)
+        if isinstance(rec.get("metrics"), dict) and isinstance(rec["metrics"].get("label"), str):
+            rec["metrics"].pop("label")
+    return ev
+
+
+_public(ledger["evidence"])
+(ROOT / "EVIDENCE_LEDGER.yaml").write_text("# Generated by scripts/build_ledger.py from the result files in results/ (records E000-E025); do not edit by hand.\n"
+                                           + yaml.safe_dump(ledger, sort_keys=False, width=140))
 print("ledger records:", list(ev))

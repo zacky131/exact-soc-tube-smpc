@@ -1,4 +1,4 @@
-"""Deterministic algebra checks for theory/cx_smpc_theory.tex.
+"""Deterministic algebra checks for the identities used in the proofs of the paper.
 
 Not an experiment: no closed-loop simulation, no performance metric.
 Verifies, on random matrices, the identities/inequalities used in the proofs.

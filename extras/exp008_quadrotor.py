@@ -16,7 +16,7 @@ from scipy.stats import beta
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 warnings.filterwarnings("ignore")
-OUT = pathlib.Path(__file__).resolve().parents[1] / "results" / "EXP008_quadrotor_pilot"
+OUT = pathlib.Path(__file__).resolve().parents[1] / "extras" / "results" / "EXP008_quadrotor_pilot"
 CFG = dict(N=30, T=80, p=0.9, ceiling=0.2, z0=[-0.5, -1.0, -2.0, -3.0], noise=dict(base=dict(sig_eta=0.2, sig_xi=0.3),
            high=dict(sig_eta=0.35, sig_xi=0.5)), runs=2000, runs_nom=300, seed=13000, obj_scale=1e-3,
            fallback_max_iters=20000, fs_eps=0.5, terminal_margin=0.02)

@@ -1,7 +1,7 @@
 """Linear system with i.i.d. state/input-multiplicative and additive noise.
 
 x+ = A0 x + B0 u + sum_i (A_i x + B_i u) theta_i + w,  E theta = 0, E theta theta' = I, cov(w) = W.
-Notation follows theory/cx_smpc_theory.tex.
+Notation follows the paper (Sections 2 and 3).
 """
 from dataclasses import dataclass, field
 

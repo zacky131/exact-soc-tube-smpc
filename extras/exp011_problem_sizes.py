@@ -9,7 +9,7 @@ the dual-mode variant (DM3, DM5) and the LMI formulation (FS0.5).
 Problem sizes depend only on the dimensions and the sparsity pattern, not on the random values (up to the numerical
 rank of the kernel factors), so one system per size suffices. No number from this script is in the manuscript.
 
-Usage:  python scripts/exp011_problem_sizes.py [--out results/EXP011_problem_sizes]
+Usage:  python3 extras/exp011_problem_sizes.py [--out extras/results/EXP011_problem_sizes]
 """
 import argparse, csv, json, pathlib, sys, warnings
 
@@ -35,7 +35,7 @@ def sizes(pr):
 
 
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("--out", default=str(ROOT / "results" / "EXP011_problem_sizes"))
+    ap = argparse.ArgumentParser(); ap.add_argument("--out", default=str(ROOT / "extras" / "results" / "EXP011_problem_sizes"))
     a = ap.parse_args(); out = pathlib.Path(a.out); out.mkdir(parents=True, exist_ok=True)
     import cxsmpc.ocp as ocp
     ocp.OBJ_SCALE = 1e-3

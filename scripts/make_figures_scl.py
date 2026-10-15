@@ -1,10 +1,15 @@
-"""Figures for the Systems & Control Letters manuscript. Data read only from frozen result files.
+"""Figures of the paper, read only from the stored result files; written to figures/.
 
-Fig. 1 (fig_region.pdf): benchmark D, N = 10, path-constraint feasibility of initial states (EXP003 v4, scaled):
-  CX-SMPC vs FS16 (eps = 0.9, its largest region in the sweep).
-Fig. 2 (fig_coupling.pdf): benchmark A, worst-step closed-loop violation vs initial transient r (EXP002 v4):
-  exact (CX) vs coupling-agnostic (CA) design, s = 1 and s = 1.5, 95% Clopper-Pearson intervals, design risk 10%.
-Palette: validated default slots 1-3 (blue #2a78d6, orange #eb6834, aqua #1baf7a); identity also by marker/line style.
+Fig. 1 (fig_mechanism.pdf): first-step plans, SOC vs coupling-agnostic design (results/EXP009_illustrations, part a).
+Fig. 2: block diagram (TikZ, in the manuscript source; not generated here).
+Fig. 3 (fig_region.pdf): feasible initial states, benchmark of Section 6.1, N = 10, SOC vs LMI with eps = 0.9
+  (results/EXP003_pilot_v4_scaled/part1_grid.csv).
+Fig. 4 (fig_trajectories.pdf): closed-loop sample paths and violation frequency (results/EXP009_illustrations, part b).
+Fig. 5 (fig_coupling.pdf): worst-step violation vs initial transient r, SOC vs coupling-agnostic design, upper limits of
+  the 95% Clopper-Pearson interval (results/EXP002_mechanism_pilot_v4).
+Fig. 6 (fig_timing.pdf): median solve times (results/EXP003b_final).
+Usage: python3 scripts/make_figures_scl.py            (all figures of the paper)
+       python3 scripts/make_figures_scl.py two-sided  (Fig. 5 with two-sided intervals, as in the first submission)
 """
 import csv, json, pathlib, sys
 
@@ -164,7 +169,7 @@ def fig_timing():
     fig.tight_layout(rect=(0, 0, 1, 0.8)); fig.savefig(OUT / "fig_timing.pdf"); plt.close(fig)
 
 
-if __name__ == "__main__" and len(sys.argv) > 1 and sys.argv[1] == "rev1":
-    fig_coupling(upper_only=True, name="fig_coupling_rev1.pdf"); print("fig_coupling_rev1.pdf written"); sys.exit(0)
+if __name__ == "__main__" and len(sys.argv) > 1 and sys.argv[1] == "two-sided":
+    fig_coupling(upper_only=False, name="fig_coupling_two_sided.pdf"); print("fig_coupling_two_sided.pdf written"); sys.exit(0)
 if __name__ == "__main__":
-    print(fig_region()); fig_coupling(); fig_mechanism(); fig_trajectories(); fig_timing(); print("figures written to", OUT)
+    print(fig_region()); fig_coupling(upper_only=True); fig_mechanism(); fig_trajectories(); fig_timing(); print("figures written to", OUT)
